@@ -1,6 +1,7 @@
 """Evaluate the event classifier and sentiment models. Writes data/evaluation_report.json.
 
-Usage: python scripts/evaluate_model.py [--transformers]
+Usage: python scripts/evaluate_model.py [--baseline-only]
+The optional FinBERT / zero-shot comparison runs automatically when torch + transformers + weights are installed.
 """
 from __future__ import annotations
 
@@ -18,9 +19,10 @@ from riskpulse.evaluation.metrics import run_evaluation  # noqa: E402
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--transformers", action="store_true", help="also evaluate FinBERT + zero-shot (slow, optional)")
+    ap.add_argument("--baseline-only", action="store_true", help="skip the optional FinBERT + zero-shot comparison")
     args = ap.parse_args()
-    rep = run_evaluation(include_transformers=args.transformers)
+    from riskpulse.nlp import transformer
+    rep = run_evaluation(include_transformers=transformer.available() and not args.baseline_only)
     (DATA_DIR / "evaluation_report.json").write_text(json.dumps(rep, indent=2), encoding="utf-8")
 
     ec = rep["event_classification"]
