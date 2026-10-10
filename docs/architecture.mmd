@@ -1,0 +1,43 @@
+%% RiskPulse AI architecture (Mermaid). Rendered version: docs/architecture.png
+flowchart LR
+  subgraph S[1 Data sources - synthetic by default]
+    N[News-like CSV/JSON<br/>data/news_sample.csv]
+    SO[Social-media CSV/JSON<br/>data/social_sample.csv]
+    U[Uploads / optional RSS]
+  end
+  subgraph I[2 Ingestion - ingestion/adapters.py]
+    A[Validate schema<br/>normalise UTC + text<br/>dedupe, UUIDv5 IDs<br/>error report]
+  end
+  subgraph E[3 NLP risk engine - pipeline.py]
+    EN[Entity + ticker linking<br/>nlp/entities.py]
+    SE[Sentiment -1..+1<br/>VADER + finance lexicon<br/>FinBERT optional]
+    EC[Event classifier<br/>rules + TF-IDF LR<br/>zero-shot optional]
+    IM[Impact 1..10<br/>scoring/impact.py + config/scoring.yaml]
+  end
+  RS[[RiskSignal - schemas.py<br/>validated Pydantic model]]
+  subgraph P[4 Portfolio stress engine - portfolio/]
+    T[Trigger<br/>impact > 7 -> scenario]
+    SC[Scenario library<br/>config/scenarios.yaml]
+    PL[Factor P&L engine<br/>duration, spread, beta, FX,<br/>delta, PD x LGD, liquidity]
+    PF[(Synthetic portfolio<br/>data/portfolio.csv)]
+  end
+  subgraph C[5 Consumers]
+    D[Streamlit dashboard - app.py]
+    API[FastAPI - api.py]
+    X[JSON / CSV / HTML exports]
+  end
+  N --> A
+  SO --> A
+  U --> A
+  A --> EN --> SE
+  EN --> EC --> IM
+  SE --> IM
+  IM --> RS
+  RS --> D
+  RS --> API
+  RS --> X
+  RS -- high-impact signal --> T --> SC --> PL
+  PF --> PL
+  PL --> D
+  PL --> API
+  PL --> X

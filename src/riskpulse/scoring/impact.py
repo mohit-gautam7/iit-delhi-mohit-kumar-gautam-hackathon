@@ -72,6 +72,7 @@ def score_impact(
         "uncertainty": uncertainty,
         "evidence_quality": round(evidence, 3),
     }
+    factors = {k: v + 0.0 for k, v in factors.items()}  # normalise -0.0 to 0.0 for display
     raw = sum(factors.values())
     factors["raw_total"] = round(raw, 3)
     return int(min(10, max(1, math.floor(raw + 0.5)))), factors  # round half up

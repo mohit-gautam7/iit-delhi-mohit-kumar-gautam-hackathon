@@ -1,0 +1,165 @@
+{
+    "scenario_key": "geopolitical_shock",
+    "scenario_name": "Geopolitical escalation",
+    "severity_scale": 1.125,
+    "entity_ticker": "MRDS",
+    "initial_value_usd": 1019100000.0,
+    "stressed_value_usd": 999611453.99,
+    "pnl_usd": -19488546.01,
+    "pnl_pct": -0.019123,
+    "trigger": {},
+    "effective_parameters": {
+        "name": "Geopolitical escalation",
+        "event_types": [
+            "Geopolitical"
+        ],
+        "description": "Escalating conflict / sanctions: risk-off equities, flight to quality lowers government yields, credit spreads widen, oil spikes, safe-haven JPY rallies, EUR weakens.",
+        "affected_asset_classes": [
+            "Equity",
+            "Government Bond",
+            "Corporate Bond",
+            "Loan",
+            "FX",
+            "Derivative"
+        ],
+        "equity_shock_pct": -0.1125,
+        "sector_equity_shocks_pct": {
+            "Energy": 0.0675,
+            "Industrials": -0.045,
+            "Consumer": -0.03375
+        },
+        "rate_shock_bp": -28.125,
+        "credit_spread_shock_bp": {
+            "AAA_AA": 16.875,
+            "A": 33.75,
+            "BBB": 67.5,
+            "HY": 168.75
+        },
+        "sector_spread_multiplier": {
+            "Industrials": 1.4,
+            "Energy": 0.8
+        },
+        "fx_shocks_pct": {
+            "EUR": -0.045,
+            "GBP": -0.03375,
+            "JPY": 0.03375
+        },
+        "commodity_shocks_pct": {
+            "oil": 0.225
+        },
+        "pd_multiplier": 1.3375,
+        "sector_pd_multiplier": {
+            "Industrials": 1.675
+        },
+        "lgd_add": 0.03375,
+        "liquidity_haircut_pct": {
+            "Corporate Bond": 0.005625,
+            "Equity": 0.005625
+        },
+        "entity_shock": {
+            "equity_pct": -0.16874999999999998,
+            "spread_bp": 168.75,
+            "pd_multiplier": 2.125
+        },
+        "sector_contagion": 0.25
+    },
+    "assumptions": [
+        "Severity scale 1.12 applied to base shocks (impact 9 / reference 8).",
+        "Parallel rate shock -28 bp; equity market move -11.2% x beta.",
+        "Entity shock on MRDS: equity -16.9%, spread +169 bp, PD x2.12; same-sector contagion 25%.",
+        "Shocked asset classes: Corporate Bond, Derivative, Equity, FX, Government Bond, Loan. Other positions are unchanged.",
+        "Bonds use modified/spread duration (first order, convexity ignored); dy and ds are converted from bp to decimals.",
+        "Loans are carried at amortised cost; stress = change in one-year expected loss (PD x LGD x EAD).",
+        "Derivatives are delta/duration approximations on notional, not full revaluations.",
+        "FX effect on non-USD positions is first order (MV x FX move); cross terms are ignored.",
+        "Liquidity haircut is applied to post-shock value to avoid double counting."
+    ],
+    "by_asset_class": [
+        {
+            "asset_class": "Loan",
+            "initial_value_usd": 500000000.0,
+            "total_pnl_usd": -7462073.39,
+            "stressed_value_usd": 492537926.61,
+            "pnl_pct": -0.01,
+            "share_of_total_pnl": 0.38
+        },
+        {
+            "asset_class": "Corporate Bond",
+            "initial_value_usd": 217700000.0,
+            "total_pnl_usd": -8468136.28,
+            "stressed_value_usd": 209231863.72,
+            "pnl_pct": -0.04,
+            "share_of_total_pnl": 0.43
+        },
+        {
+            "asset_class": "Government Bond",
+            "initial_value_usd": 172000000.0,
+            "total_pnl_usd": 1875487.5,
+            "stressed_value_usd": 173875487.5,
+            "pnl_pct": 0.01,
+            "share_of_total_pnl": -0.1
+        },
+        {
+            "asset_class": "Equity",
+            "initial_value_usd": 87000000.0,
+            "total_pnl_usd": -13303761.33,
+            "stressed_value_usd": 73696238.67,
+            "pnl_pct": -0.15,
+            "share_of_total_pnl": 0.68
+        },
+        {
+            "asset_class": "FX",
+            "initial_value_usd": 40000000.0,
+            "total_pnl_usd": -877500.0,
+            "stressed_value_usd": 39122500.0,
+            "pnl_pct": -0.02,
+            "share_of_total_pnl": 0.05
+        },
+        {
+            "asset_class": "Derivative",
+            "initial_value_usd": 2400000.0,
+            "total_pnl_usd": 8747437.5,
+            "stressed_value_usd": 11147437.5,
+            "pnl_pct": 3.64,
+            "share_of_total_pnl": -0.45
+        }
+    ],
+    "by_component": [
+        {
+            "component": "rates",
+            "label": "Interest rates",
+            "pnl_usd": 5073215.62
+        },
+        {
+            "component": "credit_spread",
+            "label": "Credit spreads",
+            "pnl_usd": -4923652.5
+        },
+        {
+            "component": "equity",
+            "label": "Equity prices",
+            "pnl_usd": -8097187.5
+        },
+        {
+            "component": "fx",
+            "label": "FX rates",
+            "pnl_usd": -7540875.0
+        },
+        {
+            "component": "commodity",
+            "label": "Commodities",
+            "pnl_usd": 2700000.0
+        },
+        {
+            "component": "credit_loss",
+            "label": "Expected credit loss",
+            "pnl_usd": -5099573.39
+        },
+        {
+            "component": "liquidity",
+            "label": "Liquidity haircut",
+            "pnl_usd": -1600473.24
+        }
+    ],
+    "is_synthetic": true
+}

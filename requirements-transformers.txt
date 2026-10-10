@@ -1,0 +1,4 @@
+# Optional transformer mode (FinBERT sentiment + BART-MNLI zero-shot fallback). Large download (~2-3 GB incl. weights).
+-r requirements.txt
+torch>=2.2
+transformers>=4.40

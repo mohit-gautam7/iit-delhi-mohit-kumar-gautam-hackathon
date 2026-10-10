@@ -1,0 +1,182 @@
+{
+    "total_signals": 254,
+    "high_impact_threshold": 7,
+    "high_impact_count": 56,
+    "by_event_type": {
+        "Geopolitical": {
+            "count": 29,
+            "avg_impact": 8.62,
+            "avg_sentiment": -0.501,
+            "high_impact": 24
+        },
+        "Macroeconomic": {
+            "count": 20,
+            "avg_impact": 6.6,
+            "avg_sentiment": -0.202,
+            "high_impact": 6
+        },
+        "Credit Event": {
+            "count": 27,
+            "avg_impact": 7.44,
+            "avg_sentiment": -0.395,
+            "high_impact": 15
+        },
+        "Merger & Acquisition": {
+            "count": 26,
+            "avg_impact": 3.62,
+            "avg_sentiment": 0.238,
+            "high_impact": 0
+        },
+        "Product Launch": {
+            "count": 16,
+            "avg_impact": 2.06,
+            "avg_sentiment": 0.481,
+            "high_impact": 0
+        },
+        "Earnings / Financial Results": {
+            "count": 20,
+            "avg_impact": 3.5,
+            "avg_sentiment": 0.021,
+            "high_impact": 0
+        },
+        "Regulatory / Legal": {
+            "count": 17,
+            "avg_impact": 4.47,
+            "avg_sentiment": 0.014,
+            "high_impact": 0
+        },
+        "Cybersecurity": {
+            "count": 26,
+            "avg_impact": 6.58,
+            "avg_sentiment": -0.396,
+            "high_impact": 2
+        },
+        "Operational Disruption": {
+            "count": 25,
+            "avg_impact": 5.16,
+            "avg_sentiment": -0.303,
+            "high_impact": 0
+        },
+        "Market / Liquidity": {
+            "count": 24,
+            "avg_impact": 6.96,
+            "avg_sentiment": -0.193,
+            "high_impact": 9
+        },
+        "Unclassified": {
+            "count": 24,
+            "avg_impact": 1.38,
+            "avg_sentiment": 0.217,
+            "high_impact": 0
+        }
+    },
+    "by_sentiment": {
+        "Negative": 133,
+        "Positive": 75,
+        "Neutral": 46
+    },
+    "by_source": {
+        "social": 129,
+        "news": 125
+    },
+    "top_entities": [
+        [
+            "AURS",
+            25
+        ],
+        [
+            "QPAY",
+            25
+        ],
+        [
+            "BWUT",
+            22
+        ],
+        [
+            "CRST",
+            18
+        ],
+        [
+            "SMST",
+            18
+        ]
+    ],
+    "recent_high_impact": [
+        {
+            "signal_id": "sig-d04d6315-4c95-5fea-ad1c-444c27311da3",
+            "timestamp": "2026-10-04T22:33:00Z",
+            "event_type": "Geopolitical",
+            "ticker": "QPAY",
+            "impact_score": 10
+        },
+        {
+            "signal_id": "sig-4ad230ca-8b4b-5768-a27d-388f86e0898d",
+            "timestamp": "2026-10-04T05:01:00Z",
+            "event_type": "Market / Liquidity",
+            "ticker": null,
+            "impact_score": 8
+        },
+        {
+            "signal_id": "sig-31abf061-341a-586a-a168-1a3bcd6f870a",
+            "timestamp": "2026-10-04T04:43:00Z",
+            "event_type": "Credit Event",
+            "ticker": "GRET",
+            "impact_score": 10
+        },
+        {
+            "signal_id": "sig-391c6efc-be59-5d9b-8c25-e3be33132314",
+            "timestamp": "2026-10-03T10:32:00Z",
+            "event_type": "Geopolitical",
+            "ticker": "AURS",
+            "impact_score": 8
+        },
+        {
+            "signal_id": "sig-5188bfbb-7782-5728-bd15-f899dd3f27de",
+            "timestamp": "2026-10-02T20:21:00Z",
+            "event_type": "Credit Event",
+            "ticker": "CRST",
+            "impact_score": 9
+        },
+        {
+            "signal_id": "sig-f38866e3-2b16-5768-9129-0faedf359870",
+            "timestamp": "2026-10-02T17:55:00Z",
+            "event_type": "Market / Liquidity",
+            "ticker": null,
+            "impact_score": 8
+        },
+        {
+            "signal_id": "sig-6e3cda75-d87d-5209-91b2-2bdaa6bc90e0",
+            "timestamp": "2026-10-02T11:36:00Z",
+            "event_type": "Macroeconomic",
+            "ticker": null,
+            "impact_score": 8
+        },
+        {
+            "signal_id": "sig-273697c2-ac23-5df3-920c-285e899ab15e",
+            "timestamp": "2026-10-02T07:15:00Z",
+            "event_type": "Geopolitical",
+            "ticker": "MRDS",
+            "impact_score": 10
+        },
+        {
+            "signal_id": "sig-f749d754-d933-5bbb-b84c-293f01e5b9cd",
+            "timestamp": "2026-10-02T06:30:00Z",
+            "event_type": "Credit Event",
+            "ticker": "ORTL",
+            "impact_score": 8
+        },
+        {
+            "signal_id": "sig-722b4c7c-666c-51e3-ac87-dde59dab12cb",
+            "timestamp": "2026-10-02T03:21:00Z",
+            "event_type": "Geopolitical",
+            "ticker": "NWBK",
+            "impact_score": 10
+        }
+    ],
+    "ingestion": {
+        "rows_read": 266,
+        "accepted": 254,
+        "rejected": 0,
+        "duplicates": 12
+    }
+}

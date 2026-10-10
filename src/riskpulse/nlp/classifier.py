@@ -96,11 +96,20 @@ RULES: dict[str, list[tuple[str, float]]] = {
 _COMPILED = {k: [(re.compile(p, re.IGNORECASE), w) for p, w in v] for k, v in RULES.items()}
 
 
+def _whole_words(text: str, start: int, end: int) -> str:
+    """Expand a stem match ('downgrad') to the full word(s) in the text ('downgrades') for explanations."""
+    while start > 0 and text[start - 1].isalnum():
+        start -= 1
+    while end < len(text) and text[end].isalnum():
+        end += 1
+    return text[start:end]
+
+
 def rule_scores(text: str) -> tuple[dict[str, float], dict[str, list[str]]]:
     """Keyword evidence per category: summed weights and the matched snippets."""
     scores, evidence = {}, {}
     for cat, pats in _COMPILED.items():
-        hits = [(m.group(0), w) for rx, w in pats if (m := rx.search(text))]
+        hits = [(_whole_words(text, m.start(), m.end()), w) for rx, w in pats if (m := rx.search(text))]
         if hits:
             scores[cat] = sum(w for _, w in hits)
             evidence[cat] = [h for h, _ in hits]

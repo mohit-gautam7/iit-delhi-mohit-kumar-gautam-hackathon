@@ -47,7 +47,7 @@ def main() -> None:
     failures = []
     with sync_playwright() as p:
         browser = launch(p)
-        page = browser.new_page(viewport={"width": args.width, "height": args.height}, device_scale_factor=1.5)
+        page = browser.new_page(viewport={"width": args.width, "height": args.height}, device_scale_factor=1.25)
         for name in PAGES:
             page.goto(f"{args.url}/{name}")
             wait_idle(page)

@@ -1,0 +1,6 @@
+# Optional: regenerate the architecture diagram, slide deck and dashboard screenshots
+-r requirements.txt
+matplotlib>=3.8
+python-pptx>=1.0
+pymupdf>=1.24
+playwright>=1.45

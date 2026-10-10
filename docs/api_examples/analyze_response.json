@@ -1,0 +1,42 @@
+{
+    "count": 1,
+    "signals": [
+        {
+            "signal_id": "sig-aed7a22c-374b-56e4-9ddf-c3c1a8262f52",
+            "record_id": "rec-aed7a22c-374b-56e4-9ddf-c3c1a8262f52",
+            "timestamp": "2026-10-10T18:10:37.446230Z",
+            "source_type": "news",
+            "source_name": "demo",
+            "entity": "Meridian Shipping",
+            "ticker": "MRDS",
+            "sector": "Industrials",
+            "text": "Meridian Shipping missed a coupon payment and was downgraded to CCC by a rating agency",
+            "sentiment_score": -1.0,
+            "sentiment_label": "Negative",
+            "event_type": "Credit Event",
+            "secondary_event_type": null,
+            "is_ambiguous": false,
+            "impact_score": 9,
+            "confidence": 0.993,
+            "explanation": "Classified as Credit Event (classifier confidence 0.99; keywords 'downgrad', 'missed a coupon', 'rating agency'). Sentiment Negative (-1.00 via finance-adapted VADER; drivers: downgraded, missed). Entity: Meridian Shipping (MRDS, 10.0% of synthetic portfolio). Impact 9/10: base 6.5 + portfolio exposure 0.8 + sentiment strength 1.5 = 8.8. High impact (> 7): eligible to trigger a portfolio stress test.",
+            "impact_factors": {
+                "base_severity": 6.5,
+                "intensity": 0.0,
+                "breadth": 0.0,
+                "exposure": 0.837,
+                "sentiment": 1.5,
+                "direction": 0.0,
+                "uncertainty": -0.0,
+                "evidence_quality": -0.0,
+                "raw_total": 8.837
+            },
+            "is_synthetic": false,
+            "model_version": "riskpulse-0.1 (vader+fin-lexicon | rules+tfidf-logreg | config-impact)",
+            "stress_trigger": {
+                "triggered": true,
+                "scenario_key": "credit_event",
+                "rationale": "Credit Event signal for Meridian Shipping (MRDS) has impact 9 > threshold 7: auto-selected scenario 'Issuer credit event'."
+            }
+        }
+    ]
+}
