@@ -72,10 +72,10 @@ def evaluate_trigger(signal, threshold: float | None = None) -> dict:
     name = scenarios()[key]["name"]
     if impact > threshold:
         return {"triggered": True, "scenario_key": key,
-                "rationale": f"{s['event_type']} signal{who} has impact {impact} > threshold {threshold}: "
+                "rationale": f"{s['event_type']} signal{who} has impact {impact} > threshold {threshold:g}: "
                              f"auto-selected scenario '{name}'."}
     return {"triggered": False, "scenario_key": key,
-            "rationale": f"Impact {impact} is not above threshold {threshold}; scenario '{name}' can still be run manually."}
+            "rationale": f"Impact {impact} is not above threshold {threshold:g}; scenario '{name}' can still be run manually."}
 
 
 def pick_demo_signal(signals, threshold: float | None = None):
