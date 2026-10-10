@@ -1,0 +1,68 @@
+# Impact-score configuration (1-10). The score measures potential financial severity,
+# NOT model confidence and NOT a calibrated probability or price forecast.
+#
+# raw = base_severity[event]
+#     + intensity   (0.5 per severe keyword, capped)
+#     + breadth     (market-wide language / inherently broad event types)
+#     + exposure    (entity is held in the synthetic portfolio, scaled by its weight)
+#     + sentiment   (|score| x weight; negative tone weighted more than positive)
+#     - direction   (non-adverse news: positive / neutral tone carries less downside risk)
+#     - uncertainty (hedged / unconfirmed language)
+#     - evidence    (lower-reliability sources, e.g. unverified social posts)
+# impact = clip(round(raw), 1, 10)
+
+base_severity:
+  Geopolitical: 6.5
+  Macroeconomic: 5.5
+  Credit Event: 6.5
+  Market / Liquidity: 6.0
+  Cybersecurity: 5.5
+  Regulatory / Legal: 4.5
+  Operational Disruption: 4.5
+  Merger & Acquisition: 4.0
+  Earnings / Financial Results: 3.5
+  Product Launch: 2.5
+  Unclassified: 1.5
+
+intensity:
+  per_keyword: 0.5
+  cap: 2.0
+  keywords: [default, bankrupt, insolven, war, invasion, missile, sanction, embargo, emergency,
+             collapse, crash, plunge, halt, ransomware, systemic, contagion, massive,
+             severe, unprecedented, nationwide, global, chapter 11, bank run, margin call]
+
+breadth:
+  market_wide_terms: [global, markets, market-wide, sector-wide, systemic, economy, all banks,
+                      region, worldwide, industry-wide, emerging markets, across the sector]
+  market_wide_bonus: 1.0
+  broad_event_types: [Geopolitical, Macroeconomic, Market / Liquidity]
+  broad_event_bonus: 0.5
+
+exposure:
+  # bonus = max_bonus * min(1, entity_portfolio_weight / full_weight)
+  max_bonus: 1.0
+  full_weight: 0.12
+
+sentiment:
+  negative_weight: 1.5
+  positive_weight: 0.5
+
+direction:
+  # RiskPulse scores DOWNSIDE risk. Favourable news is still scored (an upgrade is a credit
+  # event) but is discounted so it does not trigger adverse stress scenarios on its own.
+  positive_discount: 1.5
+  neutral_discount: 0.75
+
+uncertainty:
+  per_hedge_penalty: 0.4
+  cap: 1.2
+
+evidence:
+  source_reliability:
+    news: 1.0
+    rss: 0.9
+    social: 0.6
+  # penalty = (1 - reliability) * low_reliability_penalty
+  low_reliability_penalty: 1.5
+  # social posts with high engagement are partially corroborated
+  engagement_corroboration: 500

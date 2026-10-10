@@ -1,0 +1,6 @@
+article_id,published_at,source_name,headline,body,is_synthetic
+BAD1,2026-10-03T10:00:00Z,Synthetic Wire,,,true
+BAD2,not-a-date,Synthetic Wire,Helix Energy plunges after guidance cut,,true
+BAD3,,Synthetic Wire,Atlas Airlines grounded by system outage,,true
+OK1,2026-10-03 11:00:00,Synthetic Wire,Vantage Pharma launches new oncology drug in Europe,,true
+DUP1,2026-10-03T12:00:00Z,Synthetic Wire,Vantage Pharma launches new oncology drug in Europe!,,true

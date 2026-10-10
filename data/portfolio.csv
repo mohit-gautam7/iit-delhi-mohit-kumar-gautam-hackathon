@@ -1,0 +1,38 @@
+position_id,name,asset_class,instrument_type,issuer,ticker,sector,region,currency,rating,notional_usd,market_value_usd,modified_duration,spread_duration,pd_1y,lgd,beta,delta,underlying,is_synthetic
+LN01,Northwind Bank revolving credit facility,Loan,Revolving Credit Facility,Northwind Bank,NWBK,Financials,US,USD,A,60000000.0,60000000.0,0.0,0.0,0.004,0.4,0.0,0.0,,true
+LN02,Helix Energy term loan B,Loan,Term Loan,Helix Energy Corp,HLXE,Energy,US,USD,BB,85000000.0,85000000.0,0.0,0.0,0.02,0.45,0.0,0.0,,true
+LN03,Meridian Shipping vessel financing,Loan,Asset-Backed Loan,Meridian Shipping,MRDS,Industrials,EU,EUR,BB-,70000000.0,70000000.0,0.0,0.0,0.03,0.35,0.0,0.0,,true
+LN04,Crestline Retail working capital loan,Loan,Term Loan,Crestline Retail Group,CRST,Consumer,US,USD,BBB-,55000000.0,55000000.0,0.0,0.0,0.012,0.45,0.0,0.0,,true
+LN05,Atlas Airlines aircraft-backed loan,Loan,Asset-Backed Loan,Atlas Airlines,ATLA,Industrials,US,USD,BB,65000000.0,65000000.0,0.0,0.0,0.025,0.3,0.0,0.0,,true
+LN06,Granite REIT fixed-rate mortgage loan,Loan,Commercial Real Estate Loan,Granite Real Estate Trust,GRET,Real Estate,US,USD,BBB,80000000.0,80000000.0,3.5,0.0,0.015,0.35,0.0,0.0,,true
+LN07,Summit Steel export finance,Loan,Trade Finance,Summit Steel Industries,SMST,Materials,APAC,USD,BB+,45000000.0,45000000.0,0.0,0.0,0.018,0.4,0.0,0.0,,true
+LN08,Quantum Payments term loan,Loan,Term Loan,Quantum Payments,QPAY,Financials,US,USD,BBB,40000000.0,40000000.0,0.0,0.0,0.01,0.45,0.0,0.0,,true
+CB01,Aurora Semiconductors 4.25% 2031,Corporate Bond,Senior Unsecured Bond,Aurora Semiconductors,AURS,Technology,APAC,USD,A-,30000000.0,29400000.0,4.6,4.5,0.0,0.0,0.0,0.0,,true
+CB02,Orion Telecom 3.5% 2033 (EUR),Corporate Bond,Senior Unsecured Bond,Orion Telecom,ORTL,Telecom,EU,EUR,BBB,35000000.0,33600000.0,6.1,6.0,0.0,0.0,0.0,0.0,,true
+CB03,Bluewater Utilities 5.0% 2036,Corporate Bond,Senior Secured Bond,Bluewater Utilities,BWUT,Utilities,US,USD,A,30000000.0,31200000.0,7.8,7.6,0.0,0.0,0.0,0.0,,true
+CB04,Meridian Shipping 7.75% 2029,Corporate Bond,High Yield Bond,Meridian Shipping,MRDS,Industrials,EU,USD,B+,25000000.0,24100000.0,2.8,2.7,0.0,0.0,0.0,0.0,,true
+CB05,Helix Energy 6.0% 2030,Corporate Bond,High Yield Bond,Helix Energy Corp,HLXE,Energy,US,USD,BB,25000000.0,25600000.0,3.4,3.3,0.0,0.0,0.0,0.0,,true
+CB06,Northwind Bank 4.0% 2028 senior,Corporate Bond,Senior Unsecured Bond,Northwind Bank,NWBK,Financials,US,USD,A,30000000.0,29700000.0,1.9,1.9,0.0,0.0,0.0,0.0,,true
+CB07,Vantage Pharma 3.75% 2032 (EUR),Corporate Bond,Senior Unsecured Bond,Vantage Pharma,VNTP,Healthcare,EU,EUR,A+,25000000.0,24500000.0,5.4,5.3,0.0,0.0,0.0,0.0,,true
+CB08,Crestline Retail 5.5% 2030,Corporate Bond,Senior Unsecured Bond,Crestline Retail Group,CRST,Consumer,US,USD,BBB-,20000000.0,19600000.0,3.6,3.5,0.0,0.0,0.0,0.0,,true
+GB01,US Treasury 2Y,Government Bond,Sovereign Bond,US Treasury,,,US,USD,AA+,60000000.0,59600000.0,1.9,0.0,0.0,0.0,0.0,0.0,,true
+GB02,US Treasury 10Y,Government Bond,Sovereign Bond,US Treasury,,,US,USD,AA+,50000000.0,48500000.0,8.4,0.0,0.0,0.0,0.0,0.0,,true
+GB03,Euro-area sovereign 10Y (EUR),Government Bond,Sovereign Bond,Euro-area sovereign,,,EU,EUR,AAA,40000000.0,38800000.0,8.9,0.0,0.0,0.0,0.0,0.0,,true
+GB04,Japan sovereign 5Y (JPY),Government Bond,Sovereign Bond,Japan sovereign,,,APAC,JPY,A+,25000000.0,25100000.0,4.8,0.0,0.0,0.0,0.0,0.0,,true
+EQ01,Northwind Bank common stock,Equity,Common Stock,Northwind Bank,NWBK,Financials,US,USD,,0.0,14000000.0,0.0,0.0,0.0,0.0,1.15,0.0,,true
+EQ02,Helix Energy common stock,Equity,Common Stock,Helix Energy Corp,HLXE,Energy,US,USD,,0.0,12000000.0,0.0,0.0,0.0,0.0,0.95,0.0,,true
+EQ03,Aurora Semiconductors common stock,Equity,Common Stock,Aurora Semiconductors,AURS,Technology,APAC,USD,,0.0,16000000.0,0.0,0.0,0.0,0.0,1.35,0.0,,true
+EQ04,Meridian Shipping common stock (EUR),Equity,Common Stock,Meridian Shipping,MRDS,Industrials,EU,EUR,,0.0,8000000.0,0.0,0.0,0.0,0.0,1.25,0.0,,true
+EQ05,Vantage Pharma common stock (EUR),Equity,Common Stock,Vantage Pharma,VNTP,Healthcare,EU,EUR,,0.0,10000000.0,0.0,0.0,0.0,0.0,0.7,0.0,,true
+EQ06,Quantum Payments common stock,Equity,Common Stock,Quantum Payments,QPAY,Financials,US,USD,,0.0,11000000.0,0.0,0.0,0.0,0.0,1.4,0.0,,true
+EQ07,Granite REIT units,Equity,REIT Units,Granite Real Estate Trust,GRET,Real Estate,US,USD,,0.0,9000000.0,0.0,0.0,0.0,0.0,1.05,0.0,,true
+EQ08,Orion Telecom common stock (EUR),Equity,Common Stock,Orion Telecom,ORTL,Telecom,EU,EUR,,0.0,7000000.0,0.0,0.0,0.0,0.0,0.8,0.0,,true
+FX01,EUR cash balance,FX,Currency Balance,,,,EU,EUR,,18000000.0,18000000.0,0.0,0.0,0.0,0.0,0.0,0.0,,true
+FX02,GBP cash balance,FX,Currency Balance,,,,EU,GBP,,12000000.0,12000000.0,0.0,0.0,0.0,0.0,0.0,0.0,,true
+FX03,JPY cash balance,FX,Currency Balance,,,,APAC,JPY,,10000000.0,10000000.0,0.0,0.0,0.0,0.0,0.0,0.0,,true
+DV01,Equity index future (short hedge),Derivative,Equity Index Future,,,,US,USD,,40000000.0,0.0,0.0,0.0,0.0,0.0,1.0,-1.0,EQ_INDEX,true
+DV02,Aurora Semiconductors call options,Derivative,Equity Option,Aurora Semiconductors,AURS,Technology,APAC,USD,,10000000.0,1200000.0,0.0,0.0,0.0,0.0,1.35,0.55,AURS,true
+DV03,5Y USD interest rate swap (pay fixed),Derivative,Interest Rate Swap,,,,US,USD,,100000000.0,800000.0,4.6,0.0,0.0,0.0,0.0,-1.0,USD_RATES,true
+DV04,CDS protection bought on Meridian Shipping,Derivative,Credit Default Swap,Meridian Shipping,MRDS,Industrials,EU,USD,B+,15000000.0,300000.0,0.0,4.2,0.0,0.0,0.0,-1.0,MRDS,true
+DV05,Brent-style crude oil future (long),Derivative,Commodity Future,,,,US,USD,,12000000.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,oil,true
+DV06,EUR/USD forward (short EUR hedge),Derivative,FX Forward,,,,EU,EUR,,25000000.0,100000.0,0.0,0.0,0.0,0.0,0.0,-1.0,EURUSD,true

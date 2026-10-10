@@ -1,0 +1,629 @@
+text,event_type,sentiment_label,style,template_id,is_synthetic
+Sanctions widen after military clashes near the Eastern Corridor; analysts warn Quantum Payments faces export restrictions,Geopolitical,Negative,news,T000,true
+"Sanctions widen after military clashes near the Western Straits; analysts warn Atlas Airlines faces export restrictions, analysts said",Geopolitical,Negative,news,T000,true
+Markets: Sanctions widen after military clashes near the Eastern Corridor; analysts warn Granite Real Estate Trust faces export restrictions in early trading,Geopolitical,Negative,news,T000,true
+Sanctions widen after military clashes near the southern border region; analysts warn Vantage Pharma faces export restrictions on Tuesday,Geopolitical,Negative,news,T000,true
+"Escalating border conflict in the southern border region rattles global markets as investors flee risk assets, according to people familiar with the matter",Geopolitical,Negative,news,T001,true
+"Escalating border conflict in a key shipping strait rattles global markets as investors flee risk assets, analysts said",Geopolitical,Negative,news,T001,true
+"Escalating border conflict in a key shipping strait rattles global markets as investors flee risk assets, according to people familiar with the matter",Geopolitical,Negative,news,T001,true
+Markets: Escalating border conflict in the Northern Gulf rattles global markets as investors flee risk assets in early trading,Geopolitical,Negative,news,T001,true
+Markets: Naval blockade of the Eastern Corridor threatens shipping routes used by Crestline Retail Group in early trading,Geopolitical,Negative,news,T002,true
+"Naval blockade of the southern border region threatens shipping routes used by Crestline Retail Group, according to people familiar with the matter",Geopolitical,Negative,news,T002,true
+Markets: Naval blockade of a key shipping strait threatens shipping routes used by Aurora Semiconductors,Geopolitical,Negative,news,T002,true
+Naval blockade of the southern border region threatens shipping routes used by Summit Steel Industries in early trading,Geopolitical,Negative,news,T002,true
+"Update: Government imposes export controls on advanced chips amid rising geopolitical tension, hitting Orion Telecom, according to people familiar with the matter",Geopolitical,Negative,news,T003,true
+"Breaking: Government imposes export controls on advanced chips amid rising geopolitical tension, hitting Quantum Payments",Geopolitical,Negative,news,T003,true
+"Update: Government imposes export controls on advanced chips amid rising geopolitical tension, hitting Atlas Airlines, analysts said",Geopolitical,Negative,news,T003,true
+"Government imposes export controls on advanced chips amid rising geopolitical tension, hitting Atlas Airlines",Geopolitical,Negative,news,T003,true
+Breaking: Missile strikes near a key shipping strait push oil higher and send equities lower across the region on Tuesday,Geopolitical,Negative,news,T004,true
+"Update: Missile strikes near a key shipping strait push oil higher and send equities lower across the region, analysts said",Geopolitical,Negative,news,T004,true
+Missile strikes near the Eastern Corridor push oil higher and send equities lower across the region,Geopolitical,Negative,news,T004,true
+"Missile strikes near the Western Straits push oil higher and send equities lower across the region, analysts said",Geopolitical,Negative,news,T004,true
+"Trade war fears return as new tariffs announced on imports, Bluewater Utilities flags supply risk, sources said",Geopolitical,Negative,news,T005,true
+"Markets: Trade war fears return as new tariffs announced on imports, Granite Real Estate Trust flags supply risk, analysts said",Geopolitical,Negative,news,T005,true
+"Update: Trade war fears return as new tariffs announced on imports, Meridian Shipping flags supply risk",Geopolitical,Negative,news,T005,true
+"Update: Trade war fears return as new tariffs announced on imports, Bluewater Utilities flags supply risk, sources said",Geopolitical,Negative,news,T005,true
+Markets: Ceasefire agreed in the Northern Gulf; diplomatic talks ease pressure on shipping and energy markets,Geopolitical,Positive,news,T006,true
+Ceasefire agreed in the Eastern Corridor; diplomatic talks ease pressure on shipping and energy markets,Geopolitical,Positive,news,T006,true
+Breaking: Ceasefire agreed in the Western Straits; diplomatic talks ease pressure on shipping and energy markets,Geopolitical,Positive,news,T006,true
+Update: Ceasefire agreed in the Northern Gulf; diplomatic talks ease pressure on shipping and energy markets in early trading,Geopolitical,Positive,news,T006,true
+Markets: Diplomats meet to discuss the the Eastern Corridor dispute; no change to existing sanctions expected this week,Geopolitical,Neutral,news,T007,true
+"Diplomats meet to discuss the the Northern Gulf dispute; no change to existing sanctions expected this week, according to people familiar with the matter",Geopolitical,Neutral,news,T007,true
+"Breaking: Diplomats meet to discuss the the Eastern Corridor dispute; no change to existing sanctions expected this week, according to people familiar with the matter",Geopolitical,Neutral,news,T007,true
+"Markets: Diplomats meet to discuss the a key shipping strait dispute; no change to existing sanctions expected this week, according to people familiar with the matter",Geopolitical,Neutral,news,T007,true
+Embargo on a major oil exporter tightens supply as conflict spreads in the Eastern Corridor on Tuesday,Geopolitical,Negative,news,T008,true
+Embargo on a major oil exporter tightens supply as conflict spreads in the Western Straits,Geopolitical,Negative,news,T008,true
+Breaking: Embargo on a major oil exporter tightens supply as conflict spreads in the southern border region,Geopolitical,Negative,news,T008,true
+Embargo on a major oil exporter tightens supply as conflict spreads in a key shipping strait in early trading,Geopolitical,Negative,news,T008,true
+Coup attempt in a neighbouring state disrupts Atlas Airlines operations and raises regional political risk in early trading,Geopolitical,Negative,news,T009,true
+"Coup attempt in a neighbouring state disrupts Quantum Payments operations and raises regional political risk, analysts said",Geopolitical,Negative,news,T009,true
+"Coup attempt in a neighbouring state disrupts Bluewater Utilities operations and raises regional political risk, according to people familiar with the matter",Geopolitical,Negative,news,T009,true
+"Coup attempt in a neighbouring state disrupts Helix Energy Corp operations and raises regional political risk, according to people familiar with the matter",Geopolitical,Negative,news,T009,true
+"ok so Sanctions just got way worse. $NWBK has big exposure to the Western Straits, this is ugly",Geopolitical,Negative,social,T010,true
+"Sanctions just got way worse. $ORTL has big exposure to the Western Straits, this is ugly thoughts?",Geopolitical,Negative,social,T010,true
+"Sanctions just got way worse. $GRET has big exposure to the Western Straits, this is ugly thoughts?",Geopolitical,Negative,social,T010,true
+"ok so Sanctions just got way worse. $HLXE has big exposure to a key shipping strait, this is ugly",Geopolitical,Negative,social,T010,true
+"heads up: War headlines again. Risk-off everywhere, oil spiking, $MRDS getting crushed lol",Geopolitical,Negative,social,T011,true
+"War headlines again. Risk-off everywhere, oil spiking, $NWBK getting crushed #markets",Geopolitical,Negative,social,T011,true
+"ok so War headlines again. Risk-off everywhere, oil spiking, $QPAY getting crushed",Geopolitical,Negative,social,T011,true
+"War headlines again. Risk-off everywhere, oil spiking, $MRDS getting crushed #markets",Geopolitical,Negative,social,T011,true
+"wow. Ceasefire in the southern border region confirmed!! relief rally incoming, shipping names like $ATLA bouncing",Geopolitical,Positive,social,T012,true
+"ugh Ceasefire in the Western Straits confirmed!! relief rally incoming, shipping names like $QPAY bouncing",Geopolitical,Positive,social,T012,true
+"ugh Ceasefire in the Western Straits confirmed!! relief rally incoming, shipping names like $SMST bouncing #finance",Geopolitical,Positive,social,T012,true
+"ok so Ceasefire in the southern border region confirmed!! relief rally incoming, shipping names like $VNTP bouncing lol",Geopolitical,Positive,social,T012,true
+"Reportedly new export ban coming on chips, $MRDS could be hit hard if true",Geopolitical,Negative,social,T013,true
+"Reportedly new export ban coming on chips, $CRST could be hit hard if true thoughts?",Geopolitical,Negative,social,T013,true
+"wow. Reportedly new export ban coming on chips, $MRDS could be hit hard if true",Geopolitical,Negative,social,T013,true
+"ugh Reportedly new export ban coming on chips, $ORTL could be hit hard if true lol",Geopolitical,Negative,social,T013,true
+ok so Watching the the southern border region talks today. Nothing priced in yet either way,Geopolitical,Neutral,social,T014,true
+heads up: Watching the the Western Straits talks today. Nothing priced in yet either way,Geopolitical,Neutral,social,T014,true
+Watching the the southern border region talks today. Nothing priced in yet either way lol,Geopolitical,Neutral,social,T014,true
+ugh Watching the a key shipping strait talks today. Nothing priced in yet either way thoughts?,Geopolitical,Neutral,social,T014,true
+Military escalation near the Western Straits is not good for anyone holding $HLXE,Geopolitical,Negative,social,T015,true
+heads up: Military escalation near a key shipping strait is not good for anyone holding $AURS #finance,Geopolitical,Negative,social,T015,true
+ugh Military escalation near a key shipping strait is not good for anyone holding $ATLA #markets,Geopolitical,Negative,social,T015,true
+Military escalation near the Western Straits is not good for anyone holding $GRET,Geopolitical,Negative,social,T015,true
+"Markets: Central bank delivers surprise 25 basis point rate hike as inflation stays stubbornly high, sources said",Macroeconomic,Negative,news,T016,true
+"Central bank delivers surprise 50 basis point rate hike as inflation stays stubbornly high, sources said",Macroeconomic,Negative,news,T016,true
+"Markets: Central bank delivers surprise 75 basis point rate hike as inflation stays stubbornly high, analysts said",Macroeconomic,Negative,news,T016,true
+"Breaking: Central bank delivers surprise 75 basis point rate hike as inflation stays stubbornly high, sources said",Macroeconomic,Negative,news,T016,true
+"Inflation accelerates to 15% annual pace, raising odds of further monetary tightening, analysts said",Macroeconomic,Negative,news,T017,true
+"Markets: Inflation accelerates to 18% annual pace, raising odds of further monetary tightening, sources said",Macroeconomic,Negative,news,T017,true
+"Inflation accelerates to 8% annual pace, raising odds of further monetary tightening, sources said",Macroeconomic,Negative,news,T017,true
+"Inflation accelerates to 18% annual pace, raising odds of further monetary tightening, according to people familiar with the matter",Macroeconomic,Negative,news,T017,true
+"Markets: GDP contracts for a second quarter, confirming a technical recession in the economy, sources said",Macroeconomic,Negative,news,T018,true
+"Breaking: GDP contracts for a second quarter, confirming a technical recession in the economy",Macroeconomic,Negative,news,T018,true
+"Markets: GDP contracts for a second quarter, confirming a technical recession in the economy",Macroeconomic,Negative,news,T018,true
+"GDP contracts for a second quarter, confirming a technical recession in the economy",Macroeconomic,Negative,news,T018,true
+Update: Jobs report beats forecasts as unemployment falls to a multi-year low,Macroeconomic,Positive,news,T019,true
+Jobs report beats forecasts as unemployment falls to a multi-year low in early trading,Macroeconomic,Positive,news,T019,true
+"Jobs report beats forecasts as unemployment falls to a multi-year low, analysts said",Macroeconomic,Positive,news,T019,true
+Jobs report beats forecasts as unemployment falls to a multi-year low,Macroeconomic,Positive,news,T019,true
+"Update: Central bank signals rate cut as inflation cools faster than expected, sources said",Macroeconomic,Positive,news,T020,true
+Central bank signals rate cut as inflation cools faster than expected,Macroeconomic,Positive,news,T020,true
+"Central bank signals rate cut as inflation cools faster than expected, sources said",Macroeconomic,Positive,news,T020,true
+Markets: Central bank signals rate cut as inflation cools faster than expected,Macroeconomic,Positive,news,T020,true
+"Breaking: Manufacturing PMI slumps to its weakest level in three years as orders dry up, according to people familiar with the matter",Macroeconomic,Negative,news,T021,true
+"Manufacturing PMI slumps to its weakest level in three years as orders dry up, sources said",Macroeconomic,Negative,news,T021,true
+Manufacturing PMI slumps to its weakest level in three years as orders dry up in early trading,Macroeconomic,Negative,news,T021,true
+Manufacturing PMI slumps to its weakest level in three years as orders dry up on Tuesday,Macroeconomic,Negative,news,T021,true
+"Breaking: Central bank holds interest rates steady, in line with economists' expectations on Tuesday",Macroeconomic,Neutral,news,T022,true
+"Markets: Central bank holds interest rates steady, in line with economists' expectations, according to people familiar with the matter",Macroeconomic,Neutral,news,T022,true
+"Central bank holds interest rates steady, in line with economists' expectations in early trading",Macroeconomic,Neutral,news,T022,true
+"Central bank holds interest rates steady, in line with economists' expectations, according to people familiar with the matter",Macroeconomic,Neutral,news,T022,true
+Update: Consumer confidence drops sharply as rising prices squeeze household spending,Macroeconomic,Negative,news,T023,true
+"Update: Consumer confidence drops sharply as rising prices squeeze household spending, analysts said",Macroeconomic,Negative,news,T023,true
+Breaking: Consumer confidence drops sharply as rising prices squeeze household spending in early trading,Macroeconomic,Negative,news,T023,true
+Markets: Consumer confidence drops sharply as rising prices squeeze household spending,Macroeconomic,Negative,news,T023,true
+"Breaking: Government bond yield curve inverts further, a classic signal of recession risk for the economy, sources said",Macroeconomic,Negative,news,T024,true
+"Breaking: Government bond yield curve inverts further, a classic signal of recession risk for the economy",Macroeconomic,Negative,news,T024,true
+"Government bond yield curve inverts further, a classic signal of recession risk for the economy, sources said",Macroeconomic,Negative,news,T024,true
+"Government bond yield curve inverts further, a classic signal of recession risk for the economy in early trading",Macroeconomic,Negative,news,T024,true
+"Breaking: Economic growth surprises to the upside at 18% annualised, lifting the outlook for Aurora Semiconductors, analysts said",Macroeconomic,Positive,news,T025,true
+"Economic growth surprises to the upside at 8% annualised, lifting the outlook for Bluewater Utilities, sources said",Macroeconomic,Positive,news,T025,true
+"Breaking: Economic growth surprises to the upside at 7% annualised, lifting the outlook for Crestline Retail Group in early trading",Macroeconomic,Positive,news,T025,true
+"Update: Economic growth surprises to the upside at 12% annualised, lifting the outlook for Granite Real Estate Trust in early trading",Macroeconomic,Positive,news,T025,true
+ok so CPI hot again. 75bp hike basically locked in. rates going higher for longer #finance,Macroeconomic,Negative,social,T026,true
+ugh CPI hot again. 25bp hike basically locked in. rates going higher for longer #finance,Macroeconomic,Negative,social,T026,true
+CPI hot again. 75bp hike basically locked in. rates going higher for longer lol,Macroeconomic,Negative,social,T026,true
+ok so CPI hot again. 50bp hike basically locked in. rates going higher for longer lol,Macroeconomic,Negative,social,T026,true
+"Recession is here, GDP negative two quarters in a row. Banks like $HLXE will feel it",Macroeconomic,Negative,social,T027,true
+"Recession is here, GDP negative two quarters in a row. Banks like $CRST will feel it thoughts?",Macroeconomic,Negative,social,T027,true
+"Recession is here, GDP negative two quarters in a row. Banks like $MRDS will feel it",Macroeconomic,Negative,social,T027,true
+"Recession is here, GDP negative two quarters in a row. Banks like $AURS will feel it",Macroeconomic,Negative,social,T027,true
+"Rate cut talk from the central bank!! growth stocks love this, $ORTL up",Macroeconomic,Positive,social,T028,true
+"Rate cut talk from the central bank!! growth stocks love this, $NWBK up #finance",Macroeconomic,Positive,social,T028,true
+"Rate cut talk from the central bank!! growth stocks love this, $QPAY up thoughts?",Macroeconomic,Positive,social,T028,true
+"heads up: Rate cut talk from the central bank!! growth stocks love this, $MRDS up",Macroeconomic,Positive,social,T028,true
+ok so Rates unchanged as expected. Market shrugging it off,Macroeconomic,Neutral,social,T029,true
+Rates unchanged as expected. Market shrugging it off #finance,Macroeconomic,Neutral,social,T029,true
+wow. Rates unchanged as expected. Market shrugging it off,Macroeconomic,Neutral,social,T029,true
+heads up: Rates unchanged as expected. Market shrugging it off #markets,Macroeconomic,Neutral,social,T029,true
+wow. Inflation print ugly. Real estate names like $QPAY sliding on higher rates,Macroeconomic,Negative,social,T030,true
+ok so Inflation print ugly. Real estate names like $AURS sliding on higher rates #finance,Macroeconomic,Negative,social,T030,true
+ugh Inflation print ugly. Real estate names like $ORTL sliding on higher rates,Macroeconomic,Negative,social,T030,true
+wow. Inflation print ugly. Real estate names like $BWUT sliding on higher rates,Macroeconomic,Negative,social,T030,true
+"Unemployment ticking up and consumer spending weak, economy losing steam fast lol",Macroeconomic,Negative,social,T031,true
+"Unemployment ticking up and consumer spending weak, economy losing steam fast",Macroeconomic,Negative,social,T031,true
+"heads up: Unemployment ticking up and consumer spending weak, economy losing steam fast #finance",Macroeconomic,Negative,social,T031,true
+"Unemployment ticking up and consumer spending weak, economy losing steam fast #markets",Macroeconomic,Negative,social,T031,true
+Vantage Pharma downgraded to junk by rating agency after leverage surges,Credit Event,Negative,news,T032,true
+Markets: Atlas Airlines downgraded to junk by rating agency after leverage surges in early trading,Credit Event,Negative,news,T032,true
+"Breaking: Crestline Retail Group downgraded to junk by rating agency after leverage surges, according to people familiar with the matter",Credit Event,Negative,news,T032,true
+"Update: Northwind Bank downgraded to junk by rating agency after leverage surges, according to people familiar with the matter",Credit Event,Negative,news,T032,true
+"Crestline Retail Group missed a coupon payment on its senior bonds, triggering a grace period, analysts said",Credit Event,Negative,news,T033,true
+"Markets: Summit Steel Industries missed a coupon payment on its senior bonds, triggering a grace period, sources said",Credit Event,Negative,news,T033,true
+"Breaking: Helix Energy Corp missed a coupon payment on its senior bonds, triggering a grace period",Credit Event,Negative,news,T033,true
+"Breaking: Vantage Pharma missed a coupon payment on its senior bonds, triggering a grace period in early trading",Credit Event,Negative,news,T033,true
+Breaking: Atlas Airlines files for Chapter 11 bankruptcy protection after talks with creditors fail,Credit Event,Negative,news,T034,true
+Markets: Helix Energy Corp files for Chapter 11 bankruptcy protection after talks with creditors fail,Credit Event,Negative,news,T034,true
+"Aurora Semiconductors files for Chapter 11 bankruptcy protection after talks with creditors fail, sources said",Credit Event,Negative,news,T034,true
+"Markets: Quantum Payments files for Chapter 11 bankruptcy protection after talks with creditors fail, sources said",Credit Event,Negative,news,T034,true
+"Rating agency places Quantum Payments on negative watch citing covenant breach risk, sources said",Credit Event,Negative,news,T035,true
+Rating agency places Northwind Bank on negative watch citing covenant breach risk,Credit Event,Negative,news,T035,true
+Markets: Rating agency places Bluewater Utilities on negative watch citing covenant breach risk,Credit Event,Negative,news,T035,true
+Rating agency places Bluewater Utilities on negative watch citing covenant breach risk,Credit Event,Negative,news,T035,true
+Vantage Pharma enters debt restructuring talks as its bonds trade at distressed levels on Tuesday,Credit Event,Negative,news,T036,true
+Markets: Helix Energy Corp enters debt restructuring talks as its bonds trade at distressed levels,Credit Event,Negative,news,T036,true
+Markets: Vantage Pharma enters debt restructuring talks as its bonds trade at distressed levels in early trading,Credit Event,Negative,news,T036,true
+"Quantum Payments enters debt restructuring talks as its bonds trade at distressed levels, according to people familiar with the matter",Credit Event,Negative,news,T036,true
+"Aurora Semiconductors defaults on a $120 million term loan, lenders form an ad hoc creditors committee, according to people familiar with the matter",Credit Event,Negative,news,T037,true
+"Breaking: Helix Energy Corp defaults on a $2.4 billion term loan, lenders form an ad hoc creditors committee",Credit Event,Negative,news,T037,true
+"Markets: Aurora Semiconductors defaults on a $85 million term loan, lenders form an ad hoc creditors committee, sources said",Credit Event,Negative,news,T037,true
+"Markets: Atlas Airlines defaults on a $2.4 billion term loan, lenders form an ad hoc creditors committee, analysts said",Credit Event,Negative,news,T037,true
+Breaking: Vantage Pharma credit rating upgraded to investment grade on improved cash flow in early trading,Credit Event,Positive,news,T038,true
+Breaking: Aurora Semiconductors credit rating upgraded to investment grade on improved cash flow,Credit Event,Positive,news,T038,true
+Granite Real Estate Trust credit rating upgraded to investment grade on improved cash flow,Credit Event,Positive,news,T038,true
+Orion Telecom credit rating upgraded to investment grade on improved cash flow on Tuesday,Credit Event,Positive,news,T038,true
+Non-performing loans tied to Meridian Shipping rise as delinquencies climb,Credit Event,Negative,news,T039,true
+Non-performing loans tied to Aurora Semiconductors rise as delinquencies climb,Credit Event,Negative,news,T039,true
+Non-performing loans tied to Northwind Bank rise as delinquencies climb,Credit Event,Negative,news,T039,true
+Update: Non-performing loans tied to Northwind Bank rise as delinquencies climb,Credit Event,Negative,news,T039,true
+"Breaking: Rating agency affirms Quantum Payments credit rating with a stable outlook, analysts said",Credit Event,Neutral,news,T040,true
+Rating agency affirms Atlas Airlines credit rating with a stable outlook,Credit Event,Neutral,news,T040,true
+Rating agency affirms Quantum Payments credit rating with a stable outlook,Credit Event,Neutral,news,T040,true
+"Rating agency affirms Atlas Airlines credit rating with a stable outlook, sources said",Credit Event,Neutral,news,T040,true
+"Quantum Payments warns it may be unable to meet debt obligations due next quarter, analysts said",Credit Event,Negative,news,T041,true
+Northwind Bank warns it may be unable to meet debt obligations due next quarter on Tuesday,Credit Event,Negative,news,T041,true
+Northwind Bank warns it may be unable to meet debt obligations due next quarter in early trading,Credit Event,Negative,news,T041,true
+Update: Vantage Pharma warns it may be unable to meet debt obligations due next quarter,Credit Event,Negative,news,T041,true
+"ugh $ORTL just got downgraded to junk. bonds tanking, default risk real thoughts?",Credit Event,Negative,social,T042,true
+"wow. $CRST just got downgraded to junk. bonds tanking, default risk real thoughts?",Credit Event,Negative,social,T042,true
+"wow. $VNTP just got downgraded to junk. bonds tanking, default risk real lol",Credit Event,Negative,social,T042,true
+"$GRET just got downgraded to junk. bonds tanking, default risk real",Credit Event,Negative,social,T042,true
+Heard $MRDS missed an interest payment?? creditors are going to be furious thoughts?,Credit Event,Negative,social,T043,true
+Heard $BWUT missed an interest payment?? creditors are going to be furious #markets,Credit Event,Negative,social,T043,true
+Heard $VNTP missed an interest payment?? creditors are going to be furious #markets,Credit Event,Negative,social,T043,true
+Heard $SMST missed an interest payment?? creditors are going to be furious,Credit Event,Negative,social,T043,true
+wow. $AURS bankruptcy filing confirmed. equity is basically zero now #finance,Credit Event,Negative,social,T044,true
+$SMST bankruptcy filing confirmed. equity is basically zero now lol,Credit Event,Negative,social,T044,true
+ugh $AURS bankruptcy filing confirmed. equity is basically zero now,Credit Event,Negative,social,T044,true
+$ATLA bankruptcy filing confirmed. equity is basically zero now,Credit Event,Negative,social,T044,true
+"$VNTP upgraded by the rating agency, credit spreads tightening nicely thoughts?",Credit Event,Positive,social,T045,true
+"ugh $ATLA upgraded by the rating agency, credit spreads tightening nicely",Credit Event,Positive,social,T045,true
+"$CRST upgraded by the rating agency, credit spreads tightening nicely",Credit Event,Positive,social,T045,true
+"$QPAY upgraded by the rating agency, credit spreads tightening nicely #finance",Credit Event,Positive,social,T045,true
+Rumour that $ATLA is hiring restructuring advisers. distressed debt desks circling thoughts?,Credit Event,Negative,social,T046,true
+wow. Rumour that $MRDS is hiring restructuring advisers. distressed debt desks circling,Credit Event,Negative,social,T046,true
+Rumour that $QPAY is hiring restructuring advisers. distressed debt desks circling #markets,Credit Event,Negative,social,T046,true
+Rumour that $BWUT is hiring restructuring advisers. distressed debt desks circling lol,Credit Event,Negative,social,T046,true
+"ok so $VNTP rating affirmed, outlook stable. nothing to see here #markets",Credit Event,Neutral,social,T047,true
+"$MRDS rating affirmed, outlook stable. nothing to see here lol",Credit Event,Neutral,social,T047,true
+"heads up: $VNTP rating affirmed, outlook stable. nothing to see here #markets",Credit Event,Neutral,social,T047,true
+"$CRST rating affirmed, outlook stable. nothing to see here #finance",Credit Event,Neutral,social,T047,true
+"Vantage Pharma agrees to acquire Northwind Bank in a $2.4 billion all-cash deal, citing cost synergies",Merger & Acquisition,Positive,news,T048,true
+"Helix Energy Corp agrees to acquire Orion Telecom in a $1.2 billion all-cash deal, citing cost synergies",Merger & Acquisition,Positive,news,T048,true
+"Atlas Airlines agrees to acquire Summit Steel Industries in a $85 million all-cash deal, citing cost synergies, according to people familiar with the matter",Merger & Acquisition,Positive,news,T048,true
+"Breaking: Atlas Airlines agrees to acquire Quantum Payments in a $85 million all-cash deal, citing cost synergies on Tuesday",Merger & Acquisition,Positive,news,T048,true
+"Breaking: Aurora Semiconductors confirms early-stage merger talks with Meridian Shipping; no agreement has been reached, sources said",Merger & Acquisition,Neutral,news,T049,true
+"Summit Steel Industries confirms early-stage merger talks with Bluewater Utilities; no agreement has been reached, according to people familiar with the matter",Merger & Acquisition,Neutral,news,T049,true
+Breaking: Atlas Airlines confirms early-stage merger talks with Vantage Pharma; no agreement has been reached,Merger & Acquisition,Neutral,news,T049,true
+Orion Telecom confirms early-stage merger talks with Atlas Airlines; no agreement has been reached,Merger & Acquisition,Neutral,news,T049,true
+"Markets: Quantum Payments shareholders approve takeover by Summit Steel Industries at a 18% premium, analysts said",Merger & Acquisition,Positive,news,T050,true
+"Bluewater Utilities shareholders approve takeover by Northwind Bank at a 18% premium, sources said",Merger & Acquisition,Positive,news,T050,true
+Markets: Northwind Bank shareholders approve takeover by Granite Real Estate Trust at a 7% premium in early trading,Merger & Acquisition,Positive,news,T050,true
+"Update: Aurora Semiconductors shareholders approve takeover by Vantage Pharma at a 15% premium, according to people familiar with the matter",Merger & Acquisition,Positive,news,T050,true
+Summit Steel Industries takeover bid for Crestline Retail Group collapses after financing falls through on Tuesday,Merger & Acquisition,Negative,news,T051,true
+Summit Steel Industries takeover bid for Crestline Retail Group collapses after financing falls through,Merger & Acquisition,Negative,news,T051,true
+"Crestline Retail Group takeover bid for Helix Energy Corp collapses after financing falls through, according to people familiar with the matter",Merger & Acquisition,Negative,news,T051,true
+"Summit Steel Industries takeover bid for Crestline Retail Group collapses after financing falls through, analysts said",Merger & Acquisition,Negative,news,T051,true
+Update: Northwind Bank to divest its logistics unit in a spin-off expected to close next year,Merger & Acquisition,Neutral,news,T052,true
+Update: Orion Telecom to divest its logistics unit in a spin-off expected to close next year,Merger & Acquisition,Neutral,news,T052,true
+"Quantum Payments to divest its logistics unit in a spin-off expected to close next year, sources said",Merger & Acquisition,Neutral,news,T052,true
+"Aurora Semiconductors to divest its logistics unit in a spin-off expected to close next year, sources said",Merger & Acquisition,Neutral,news,T052,true
+Breaking: Private equity firm launches $2.4 billion leveraged buyout of Quantum Payments,Merger & Acquisition,Positive,news,T053,true
+"Markets: Private equity firm launches $120 million leveraged buyout of Vantage Pharma, analysts said",Merger & Acquisition,Positive,news,T053,true
+Markets: Private equity firm launches $2.4 billion leveraged buyout of Aurora Semiconductors,Merger & Acquisition,Positive,news,T053,true
+"Update: Private equity firm launches $85 million leveraged buyout of Aurora Semiconductors, sources said",Merger & Acquisition,Positive,news,T053,true
+"Crestline Retail Group acquires a minority stake in a regional start-up for an undisclosed sum, sources said",Merger & Acquisition,Neutral,news,T054,true
+"Update: Crestline Retail Group acquires a minority stake in a regional start-up for an undisclosed sum, analysts said",Merger & Acquisition,Neutral,news,T054,true
+"Aurora Semiconductors acquires a minority stake in a regional start-up for an undisclosed sum, analysts said",Merger & Acquisition,Neutral,news,T054,true
+"Quantum Payments acquires a minority stake in a regional start-up for an undisclosed sum, analysts said",Merger & Acquisition,Neutral,news,T054,true
+"Acquisition of Summit Steel Industries will add $2.4 billion of debt to Atlas Airlines's balance sheet, analysts caution, sources said",Merger & Acquisition,Negative,news,T055,true
+"Update: Acquisition of Summit Steel Industries will add $120 million of debt to Helix Energy Corp's balance sheet, analysts caution, sources said",Merger & Acquisition,Negative,news,T055,true
+"Markets: Acquisition of Crestline Retail Group will add $450 million of debt to Quantum Payments's balance sheet, analysts caution",Merger & Acquisition,Negative,news,T055,true
+"Markets: Acquisition of Vantage Pharma will add $85 million of debt to Orion Telecom's balance sheet, analysts caution in early trading",Merger & Acquisition,Negative,news,T055,true
+Markets: Aurora Semiconductors and Granite Real Estate Trust announce merger of equals to create a sector leader,Merger & Acquisition,Positive,news,T056,true
+Breaking: Quantum Payments and Granite Real Estate Trust announce merger of equals to create a sector leader,Merger & Acquisition,Positive,news,T056,true
+"Granite Real Estate Trust and Meridian Shipping announce merger of equals to create a sector leader, analysts said",Merger & Acquisition,Positive,news,T056,true
+Meridian Shipping and Bluewater Utilities announce merger of equals to create a sector leader,Merger & Acquisition,Positive,news,T056,true
+"$MRDS buying Granite Real Estate Trust!! huge deal, synergies look great #markets",Merger & Acquisition,Positive,social,T057,true
+"ok so $BWUT buying Meridian Shipping!! huge deal, synergies look great #finance",Merger & Acquisition,Positive,social,T057,true
+"ugh $ATLA buying Quantum Payments!! huge deal, synergies look great #markets",Merger & Acquisition,Positive,social,T057,true
+"$CRST buying Granite Real Estate Trust!! huge deal, synergies look great thoughts?",Merger & Acquisition,Positive,social,T057,true
+ugh Merger talks between $QPAY and Orion Telecom reportedly ongoing. could go either way,Merger & Acquisition,Neutral,social,T058,true
+Merger talks between $SMST and Bluewater Utilities reportedly ongoing. could go either way #markets,Merger & Acquisition,Neutral,social,T058,true
+ok so Merger talks between $ORTL and Summit Steel Industries reportedly ongoing. could go either way thoughts?,Merger & Acquisition,Neutral,social,T058,true
+ugh Merger talks between $HLXE and Bluewater Utilities reportedly ongoing. could go either way #markets,Merger & Acquisition,Neutral,social,T058,true
+ok so $QPAY overpaying for Atlas Airlines with borrowed money. acquisition looks like a mistake lol,Merger & Acquisition,Negative,social,T059,true
+$VNTP overpaying for Crestline Retail Group with borrowed money. acquisition looks like a mistake #markets,Merger & Acquisition,Negative,social,T059,true
+$MRDS overpaying for Summit Steel Industries with borrowed money. acquisition looks like a mistake,Merger & Acquisition,Negative,social,T059,true
+wow. $SMST overpaying for Bluewater Utilities with borrowed money. acquisition looks like a mistake #markets,Merger & Acquisition,Negative,social,T059,true
+"ugh Takeover premium of 8% for $NWBK holders, nice payday",Merger & Acquisition,Positive,social,T060,true
+"Takeover premium of 8% for $AURS holders, nice payday thoughts?",Merger & Acquisition,Positive,social,T060,true
+"Takeover premium of 22% for $QPAY holders, nice payday",Merger & Acquisition,Positive,social,T060,true
+"wow. Takeover premium of 7% for $GRET holders, nice payday lol",Merger & Acquisition,Positive,social,T060,true
+"$NWBK tender offer details out today, reading the filing now #markets",Merger & Acquisition,Neutral,social,T061,true
+"ok so $VNTP tender offer details out today, reading the filing now #markets",Merger & Acquisition,Neutral,social,T061,true
+"ok so $NWBK tender offer details out today, reading the filing now",Merger & Acquisition,Neutral,social,T061,true
+"$SMST tender offer details out today, reading the filing now",Merger & Acquisition,Neutral,social,T061,true
+"Breaking: Orion Telecom unveils its next-generation payments app, promising faster performance at lower cost in early trading",Product Launch,Positive,news,T062,true
+"Breaking: Orion Telecom unveils its next-generation trading platform, promising faster performance at lower cost in early trading",Product Launch,Positive,news,T062,true
+"Breaking: Quantum Payments unveils its next-generation trading platform, promising faster performance at lower cost, according to people familiar with the matter",Product Launch,Positive,news,T062,true
+"Markets: Northwind Bank unveils its next-generation cloud platform, promising faster performance at lower cost",Product Launch,Positive,news,T062,true
+Granite Real Estate Trust launches new fleet management system in three markets ahead of schedule on Tuesday,Product Launch,Positive,news,T063,true
+Markets: Orion Telecom launches new cloud platform in three markets ahead of schedule,Product Launch,Positive,news,T063,true
+"Breaking: Vantage Pharma launches new trading platform in three markets ahead of schedule, analysts said",Product Launch,Positive,news,T063,true
+"Update: Vantage Pharma launches new oncology drug in three markets ahead of schedule, analysts said",Product Launch,Positive,news,T063,true
+Granite Real Estate Trust introduces an updated smart grid service; pricing will be announced later on Tuesday,Product Launch,Neutral,news,T064,true
+Helix Energy Corp introduces an updated 5G network service; pricing will be announced later,Product Launch,Neutral,news,T064,true
+Update: Aurora Semiconductors introduces an updated loyalty programme; pricing will be announced later,Product Launch,Neutral,news,T064,true
+"Atlas Airlines introduces an updated payments app; pricing will be announced later, analysts said",Product Launch,Neutral,news,T064,true
+"Atlas Airlines delays launch of its new oncology drug after testing problems, sources said",Product Launch,Negative,news,T065,true
+Aurora Semiconductors delays launch of its new payments app after testing problems on Tuesday,Product Launch,Negative,news,T065,true
+Markets: Crestline Retail Group delays launch of its new oncology drug after testing problems,Product Launch,Negative,news,T065,true
+"Breaking: Orion Telecom delays launch of its new 5G network service after testing problems, according to people familiar with the matter",Product Launch,Negative,news,T065,true
+"Markets: Pre-orders for Vantage Pharma's new smart grid service exceed expectations in the first week, according to people familiar with the matter",Product Launch,Positive,news,T066,true
+Update: Pre-orders for Granite Real Estate Trust's new smart grid service exceed expectations in the first week,Product Launch,Positive,news,T066,true
+Breaking: Pre-orders for Atlas Airlines's new oncology drug exceed expectations in the first week,Product Launch,Positive,news,T066,true
+Update: Pre-orders for Orion Telecom's new fleet management system exceed expectations in the first week in early trading,Product Launch,Positive,news,T066,true
+Breaking: Helix Energy Corp rolls out AI accelerator chip to enterprise clients after a successful pilot on Tuesday,Product Launch,Positive,news,T067,true
+Breaking: Granite Real Estate Trust rolls out AI accelerator chip to enterprise clients after a successful pilot in early trading,Product Launch,Positive,news,T067,true
+"Vantage Pharma rolls out loyalty programme to enterprise clients after a successful pilot, analysts said",Product Launch,Positive,news,T067,true
+"Update: Bluewater Utilities rolls out payments app to enterprise clients after a successful pilot, according to people familiar with the matter",Product Launch,Positive,news,T067,true
+"Orion Telecom to debut its cloud platform at an industry conference next month, sources said",Product Launch,Neutral,news,T068,true
+Vantage Pharma to debut its AI accelerator chip at an industry conference next month,Product Launch,Neutral,news,T068,true
+Markets: Northwind Bank to debut its 5G network service at an industry conference next month on Tuesday,Product Launch,Neutral,news,T068,true
+Update: Summit Steel Industries to debut its fleet management system at an industry conference next month,Product Launch,Neutral,news,T068,true
+"Reviews of Granite Real Estate Trust's newly launched cloud platform are lukewarm as rivals cut prices, according to people familiar with the matter",Product Launch,Negative,news,T069,true
+Breaking: Reviews of Granite Real Estate Trust's newly launched trading platform are lukewarm as rivals cut prices,Product Launch,Negative,news,T069,true
+Update: Reviews of Crestline Retail Group's newly launched payments app are lukewarm as rivals cut prices on Tuesday,Product Launch,Negative,news,T069,true
+Breaking: Reviews of Vantage Pharma's newly launched smart grid service are lukewarm as rivals cut prices,Product Launch,Negative,news,T069,true
+"$MRDS new 5G network service launch looks amazing, demand is going to be huge #finance",Product Launch,Positive,social,T070,true
+"$ORTL new oncology drug launch looks amazing, demand is going to be huge",Product Launch,Positive,social,T070,true
+"ugh $AURS new 5G network service launch looks amazing, demand is going to be huge",Product Launch,Positive,social,T070,true
+"ok so $ORTL new trading platform launch looks amazing, demand is going to be huge",Product Launch,Positive,social,T070,true
+$HLXE launch event was a flop. loyalty programme is late and overpriced,Product Launch,Negative,social,T071,true
+ok so $AURS launch event was a flop. loyalty programme is late and overpriced lol,Product Launch,Negative,social,T071,true
+ugh $VNTP launch event was a flop. payments app is late and overpriced thoughts?,Product Launch,Negative,social,T071,true
+$QPAY launch event was a flop. trading platform is late and overpriced lol,Product Launch,Negative,social,T071,true
+$HLXE unveiling the cloud platform tomorrow. curious to see specs lol,Product Launch,Neutral,social,T072,true
+$NWBK unveiling the oncology drug tomorrow. curious to see specs lol,Product Launch,Neutral,social,T072,true
+ugh $SMST unveiling the 5G network service tomorrow. curious to see specs thoughts?,Product Launch,Neutral,social,T072,true
+$AURS unveiling the oncology drug tomorrow. curious to see specs thoughts?,Product Launch,Neutral,social,T072,true
+wow. Just tried the new $ORTL trading platform. honestly impressive #markets,Product Launch,Positive,social,T073,true
+Just tried the new $VNTP fleet management system. honestly impressive,Product Launch,Positive,social,T073,true
+wow. Just tried the new $ORTL 5G network service. honestly impressive #finance,Product Launch,Positive,social,T073,true
+heads up: Just tried the new $BWUT payments app. honestly impressive lol,Product Launch,Positive,social,T073,true
+"Update: Aurora Semiconductors Q2 earnings beat estimates as revenue climbs 3%, according to people familiar with the matter",Earnings / Financial Results,Positive,news,T074,true
+"Helix Energy Corp Q2 earnings beat estimates as revenue climbs 12%, according to people familiar with the matter",Earnings / Financial Results,Positive,news,T074,true
+Update: Granite Real Estate Trust Q2 earnings beat estimates as revenue climbs 5%,Earnings / Financial Results,Positive,news,T074,true
+Breaking: Atlas Airlines Q3 earnings beat estimates as revenue climbs 22%,Earnings / Financial Results,Positive,news,T074,true
+"Bluewater Utilities misses Q1 profit expectations and cuts full-year guidance, according to people familiar with the matter",Earnings / Financial Results,Negative,news,T075,true
+"Aurora Semiconductors misses Q1 profit expectations and cuts full-year guidance, sources said",Earnings / Financial Results,Negative,news,T075,true
+Markets: Vantage Pharma misses Q4 profit expectations and cuts full-year guidance,Earnings / Financial Results,Negative,news,T075,true
+"Breaking: Aurora Semiconductors misses Q3 profit expectations and cuts full-year guidance, according to people familiar with the matter",Earnings / Financial Results,Negative,news,T075,true
+"Quantum Payments raises outlook after record quarterly revenue and wider margins, analysts said",Earnings / Financial Results,Positive,news,T076,true
+"Granite Real Estate Trust raises outlook after record quarterly revenue and wider margins, sources said",Earnings / Financial Results,Positive,news,T076,true
+Quantum Payments raises outlook after record quarterly revenue and wider margins on Tuesday,Earnings / Financial Results,Positive,news,T076,true
+"Summit Steel Industries raises outlook after record quarterly revenue and wider margins, analysts said",Earnings / Financial Results,Positive,news,T076,true
+Update: Northwind Bank reports a Q4 net loss as costs surge and margins shrink,Earnings / Financial Results,Negative,news,T077,true
+"Crestline Retail Group reports a Q3 net loss as costs surge and margins shrink, according to people familiar with the matter",Earnings / Financial Results,Negative,news,T077,true
+"Markets: Granite Real Estate Trust reports a Q1 net loss as costs surge and margins shrink, sources said",Earnings / Financial Results,Negative,news,T077,true
+Atlas Airlines reports a Q1 net loss as costs surge and margins shrink,Earnings / Financial Results,Negative,news,T077,true
+Breaking: Bluewater Utilities Q2 results in line with consensus; guidance maintained,Earnings / Financial Results,Neutral,news,T078,true
+Vantage Pharma Q1 results in line with consensus; guidance maintained on Tuesday,Earnings / Financial Results,Neutral,news,T078,true
+"Breaking: Northwind Bank Q3 results in line with consensus; guidance maintained, analysts said",Earnings / Financial Results,Neutral,news,T078,true
+Granite Real Estate Trust Q1 results in line with consensus; guidance maintained in early trading,Earnings / Financial Results,Neutral,news,T078,true
+"Aurora Semiconductors lifts dividend and announces $450 million buyback after strong annual results, according to people familiar with the matter",Earnings / Financial Results,Positive,news,T079,true
+Helix Energy Corp lifts dividend and announces $120 million buyback after strong annual results in early trading,Earnings / Financial Results,Positive,news,T079,true
+"Helix Energy Corp lifts dividend and announces $85 million buyback after strong annual results, analysts said",Earnings / Financial Results,Positive,news,T079,true
+"Crestline Retail Group lifts dividend and announces $450 million buyback after strong annual results, analysts said",Earnings / Financial Results,Positive,news,T079,true
+Update: Aurora Semiconductors warns of weaker Q3 revenue as demand softens,Earnings / Financial Results,Negative,news,T080,true
+Markets: Quantum Payments warns of weaker Q2 revenue as demand softens,Earnings / Financial Results,Negative,news,T080,true
+Aurora Semiconductors warns of weaker Q4 revenue as demand softens,Earnings / Financial Results,Negative,news,T080,true
+"Breaking: Atlas Airlines warns of weaker Q1 revenue as demand softens, analysts said",Earnings / Financial Results,Negative,news,T080,true
+"Crestline Retail Group EPS falls 18% year on year, below analyst estimates",Earnings / Financial Results,Negative,news,T081,true
+"Breaking: Meridian Shipping EPS falls 5% year on year, below analyst estimates on Tuesday",Earnings / Financial Results,Negative,news,T081,true
+"Breaking: Orion Telecom EPS falls 15% year on year, below analyst estimates",Earnings / Financial Results,Negative,news,T081,true
+"Markets: Helix Energy Corp EPS falls 12% year on year, below analyst estimates, analysts said",Earnings / Financial Results,Negative,news,T081,true
+"Breaking: Vantage Pharma beats Q2 EPS estimates but warns on next quarter's margins, sources said",Earnings / Financial Results,Positive,news,T082,true
+Summit Steel Industries beats Q2 EPS estimates but warns on next quarter's margins,Earnings / Financial Results,Positive,news,T082,true
+Meridian Shipping beats Q3 EPS estimates but warns on next quarter's margins,Earnings / Financial Results,Positive,news,T082,true
+Update: Meridian Shipping beats Q1 EPS estimates but warns on next quarter's margins,Earnings / Financial Results,Positive,news,T082,true
+"wow. $AURS crushed earnings!! revenue up 18%, guidance raised",Earnings / Financial Results,Positive,social,T083,true
+"$MRDS crushed earnings!! revenue up 12%, guidance raised thoughts?",Earnings / Financial Results,Positive,social,T083,true
+"wow. $CRST crushed earnings!! revenue up 22%, guidance raised #markets",Earnings / Financial Results,Positive,social,T083,true
+"ugh $MRDS crushed earnings!! revenue up 8%, guidance raised lol",Earnings / Financial Results,Positive,social,T083,true
+ok so $BWUT earnings miss and guidance cut. ouch #finance,Earnings / Financial Results,Negative,social,T084,true
+ugh $MRDS earnings miss and guidance cut. ouch,Earnings / Financial Results,Negative,social,T084,true
+heads up: $HLXE earnings miss and guidance cut. ouch,Earnings / Financial Results,Negative,social,T084,true
+$AURS earnings miss and guidance cut. ouch #finance,Earnings / Financial Results,Negative,social,T084,true
+ok so $MRDS Q1 numbers basically in line. stock flat after hours,Earnings / Financial Results,Neutral,social,T085,true
+$ATLA Q2 numbers basically in line. stock flat after hours thoughts?,Earnings / Financial Results,Neutral,social,T085,true
+$AURS Q2 numbers basically in line. stock flat after hours lol,Earnings / Financial Results,Neutral,social,T085,true
+$VNTP Q3 numbers basically in line. stock flat after hours,Earnings / Financial Results,Neutral,social,T085,true
+ugh $GRET profit warning out. margins getting squeezed hard #markets,Earnings / Financial Results,Negative,social,T086,true
+$CRST profit warning out. margins getting squeezed hard,Earnings / Financial Results,Negative,social,T086,true
+ugh $ATLA profit warning out. margins getting squeezed hard,Earnings / Financial Results,Negative,social,T086,true
+$VNTP profit warning out. margins getting squeezed hard,Earnings / Financial Results,Negative,social,T086,true
+"Strong quarter from $GRET, net income way ahead of consensus thoughts?",Earnings / Financial Results,Positive,social,T087,true
+"wow. Strong quarter from $ORTL, net income way ahead of consensus lol",Earnings / Financial Results,Positive,social,T087,true
+"ugh Strong quarter from $ATLA, net income way ahead of consensus",Earnings / Financial Results,Positive,social,T087,true
+"Strong quarter from $VNTP, net income way ahead of consensus #finance",Earnings / Financial Results,Positive,social,T087,true
+Breaking: Regulator fines Helix Energy Corp $1.2 billion over misleading disclosures,Regulatory / Legal,Negative,news,T088,true
+"Regulator fines Northwind Bank $1.2 billion over misleading disclosures, analysts said",Regulatory / Legal,Negative,news,T088,true
+Update: Regulator fines Helix Energy Corp $85 million over misleading disclosures,Regulatory / Legal,Negative,news,T088,true
+"Markets: Regulator fines Crestline Retail Group $85 million over misleading disclosures, according to people familiar with the matter",Regulatory / Legal,Negative,news,T088,true
+Helix Energy Corp sued in class action lawsuit alleging securities fraud in early trading,Regulatory / Legal,Negative,news,T089,true
+"Update: Aurora Semiconductors sued in class action lawsuit alleging securities fraud, sources said",Regulatory / Legal,Negative,news,T089,true
+Crestline Retail Group sued in class action lawsuit alleging securities fraud in early trading,Regulatory / Legal,Negative,news,T089,true
+"Breaking: Atlas Airlines sued in class action lawsuit alleging securities fraud, analysts said",Regulatory / Legal,Negative,news,T089,true
+Antitrust regulator opens investigation into Bluewater Utilities's pricing practices,Regulatory / Legal,Negative,news,T090,true
+Antitrust regulator opens investigation into Aurora Semiconductors's pricing practices,Regulatory / Legal,Negative,news,T090,true
+"Antitrust regulator opens investigation into Atlas Airlines's pricing practices, according to people familiar with the matter",Regulatory / Legal,Negative,news,T090,true
+Antitrust regulator opens investigation into Summit Steel Industries's pricing practices,Regulatory / Legal,Negative,news,T090,true
+Court rules in favour of Atlas Airlines in long-running patent litigation,Regulatory / Legal,Positive,news,T091,true
+Update: Court rules in favour of Aurora Semiconductors in long-running patent litigation,Regulatory / Legal,Positive,news,T091,true
+"Court rules in favour of Granite Real Estate Trust in long-running patent litigation, sources said",Regulatory / Legal,Positive,news,T091,true
+Court rules in favour of Granite Real Estate Trust in long-running patent litigation in early trading,Regulatory / Legal,Positive,news,T091,true
+Atlas Airlines reaches settlement with regulator; no admission of wrongdoing on Tuesday,Regulatory / Legal,Neutral,news,T092,true
+Northwind Bank reaches settlement with regulator; no admission of wrongdoing,Regulatory / Legal,Neutral,news,T092,true
+"Aurora Semiconductors reaches settlement with regulator; no admission of wrongdoing, analysts said",Regulatory / Legal,Neutral,news,T092,true
+"Update: Crestline Retail Group reaches settlement with regulator; no admission of wrongdoing, sources said",Regulatory / Legal,Neutral,news,T092,true
+Breaking: Watchdog suspends Aurora Semiconductors's operating licence pending a compliance review,Regulatory / Legal,Negative,news,T093,true
+Watchdog suspends Orion Telecom's operating licence pending a compliance review,Regulatory / Legal,Negative,news,T093,true
+"Update: Watchdog suspends Quantum Payments's operating licence pending a compliance review, according to people familiar with the matter",Regulatory / Legal,Negative,news,T093,true
+"Watchdog suspends Granite Real Estate Trust's operating licence pending a compliance review, sources said",Regulatory / Legal,Negative,news,T093,true
+"Breaking: New capital rules from the banking regulator could force Crestline Retail Group to raise equity, according to people familiar with the matter",Regulatory / Legal,Negative,news,T094,true
+"Update: New capital rules from the banking regulator could force Quantum Payments to raise equity, according to people familiar with the matter",Regulatory / Legal,Negative,news,T094,true
+Breaking: New capital rules from the banking regulator could force Meridian Shipping to raise equity,Regulatory / Legal,Negative,news,T094,true
+New capital rules from the banking regulator could force Quantum Payments to raise equity on Tuesday,Regulatory / Legal,Negative,news,T094,true
+Markets: Regulator grants Granite Real Estate Trust approval for its new loyalty programme,Regulatory / Legal,Positive,news,T095,true
+"Update: Regulator grants Crestline Retail Group approval for its new payments app, analysts said",Regulatory / Legal,Positive,news,T095,true
+"Markets: Regulator grants Vantage Pharma approval for its new oncology drug, sources said",Regulatory / Legal,Positive,news,T095,true
+"Regulator grants Helix Energy Corp approval for its new loyalty programme, according to people familiar with the matter",Regulatory / Legal,Positive,news,T095,true
+Prosecutors widen probe into Orion Telecom executives over alleged bribery,Regulatory / Legal,Negative,news,T096,true
+"Prosecutors widen probe into Vantage Pharma executives over alleged bribery, sources said",Regulatory / Legal,Negative,news,T096,true
+Prosecutors widen probe into Crestline Retail Group executives over alleged bribery in early trading,Regulatory / Legal,Negative,news,T096,true
+Update: Prosecutors widen probe into Orion Telecom executives over alleged bribery on Tuesday,Regulatory / Legal,Negative,news,T096,true
+$SMST hit with a $120 million fine by the regulator. compliance team asleep?,Regulatory / Legal,Negative,social,T097,true
+ok so $ORTL hit with a $85 million fine by the regulator. compliance team asleep? #markets,Regulatory / Legal,Negative,social,T097,true
+ok so $GRET hit with a $120 million fine by the regulator. compliance team asleep? lol,Regulatory / Legal,Negative,social,T097,true
+ugh $MRDS hit with a $120 million fine by the regulator. compliance team asleep? thoughts?,Regulatory / Legal,Negative,social,T097,true
+ok so Class action against $NWBK filed today. lawyers everywhere lol,Regulatory / Legal,Negative,social,T098,true
+Class action against $SMST filed today. lawyers everywhere #markets,Regulatory / Legal,Negative,social,T098,true
+ok so Class action against $ORTL filed today. lawyers everywhere #markets,Regulatory / Legal,Negative,social,T098,true
+heads up: Class action against $QPAY filed today. lawyers everywhere,Regulatory / Legal,Negative,social,T098,true
+wow. $HLXE wins in court!! patent ruling a big relief,Regulatory / Legal,Positive,social,T099,true
+ok so $AURS wins in court!! patent ruling a big relief,Regulatory / Legal,Positive,social,T099,true
+$QPAY wins in court!! patent ruling a big relief thoughts?,Regulatory / Legal,Positive,social,T099,true
+$MRDS wins in court!! patent ruling a big relief lol,Regulatory / Legal,Positive,social,T099,true
+ugh $CRST settlement with the regulator announced. amount not disclosed lol,Regulatory / Legal,Neutral,social,T100,true
+heads up: $AURS settlement with the regulator announced. amount not disclosed thoughts?,Regulatory / Legal,Neutral,social,T100,true
+ugh $HLXE settlement with the regulator announced. amount not disclosed,Regulatory / Legal,Neutral,social,T100,true
+ugh $ORTL settlement with the regulator announced. amount not disclosed,Regulatory / Legal,Neutral,social,T100,true
+wow. Antitrust probe into $ORTL could drag on for years lol,Regulatory / Legal,Negative,social,T101,true
+wow. Antitrust probe into $QPAY could drag on for years,Regulatory / Legal,Negative,social,T101,true
+Antitrust probe into $QPAY could drag on for years #markets,Regulatory / Legal,Negative,social,T101,true
+heads up: Antitrust probe into $VNTP could drag on for years #finance,Regulatory / Legal,Negative,social,T101,true
+Ransomware attack forces Bluewater Utilities to shut down core systems; customer data may be exposed,Cybersecurity,Negative,news,T102,true
+"Breaking: Ransomware attack forces Summit Steel Industries to shut down core systems; customer data may be exposed, sources said",Cybersecurity,Negative,news,T102,true
+Update: Ransomware attack forces Helix Energy Corp to shut down core systems; customer data may be exposed in early trading,Cybersecurity,Negative,news,T102,true
+"Breaking: Ransomware attack forces Northwind Bank to shut down core systems; customer data may be exposed, analysts said",Cybersecurity,Negative,news,T102,true
+"Update: Quantum Payments discloses data breach affecting millions of customer records, sources said",Cybersecurity,Negative,news,T103,true
+Granite Real Estate Trust discloses data breach affecting millions of customer records on Tuesday,Cybersecurity,Negative,news,T103,true
+Breaking: Quantum Payments discloses data breach affecting millions of customer records in early trading,Cybersecurity,Negative,news,T103,true
+"Breaking: Helix Energy Corp discloses data breach affecting millions of customer records, analysts said",Cybersecurity,Negative,news,T103,true
+Hackers gained unauthorized access to Granite Real Estate Trust's payment network for several weeks,Cybersecurity,Negative,news,T104,true
+Breaking: Hackers gained unauthorized access to Bluewater Utilities's payment network for several weeks,Cybersecurity,Negative,news,T104,true
+"Hackers gained unauthorized access to Granite Real Estate Trust's payment network for several weeks, according to people familiar with the matter",Cybersecurity,Negative,news,T104,true
+"Hackers gained unauthorized access to Orion Telecom's payment network for several weeks, according to people familiar with the matter",Cybersecurity,Negative,news,T104,true
+DDoS attack knocks Granite Real Estate Trust's online banking platform offline,Cybersecurity,Negative,news,T105,true
+"Markets: DDoS attack knocks Summit Steel Industries's online banking platform offline, according to people familiar with the matter",Cybersecurity,Negative,news,T105,true
+"Breaking: DDoS attack knocks Orion Telecom's online banking platform offline, analysts said",Cybersecurity,Negative,news,T105,true
+DDoS attack knocks Crestline Retail Group's online banking platform offline,Cybersecurity,Negative,news,T105,true
+Vantage Pharma patches critical software vulnerability; no evidence of exploitation found in early trading,Cybersecurity,Neutral,news,T106,true
+"Orion Telecom patches critical software vulnerability; no evidence of exploitation found, analysts said",Cybersecurity,Neutral,news,T106,true
+Quantum Payments patches critical software vulnerability; no evidence of exploitation found,Cybersecurity,Neutral,news,T106,true
+Aurora Semiconductors patches critical software vulnerability; no evidence of exploitation found,Cybersecurity,Neutral,news,T106,true
+"Phishing campaign targeting Aurora Semiconductors employees leads to leaked data, regulators notified on Tuesday",Cybersecurity,Negative,news,T107,true
+"Markets: Phishing campaign targeting Atlas Airlines employees leads to leaked data, regulators notified, analysts said",Cybersecurity,Negative,news,T107,true
+"Phishing campaign targeting Aurora Semiconductors employees leads to leaked data, regulators notified, analysts said",Cybersecurity,Negative,news,T107,true
+"Phishing campaign targeting Meridian Shipping employees leads to leaked data, regulators notified, sources said",Cybersecurity,Negative,news,T107,true
+Summit Steel Industries restores systems after cyber incident; says no customer funds were lost,Cybersecurity,Positive,news,T108,true
+Update: Quantum Payments restores systems after cyber incident; says no customer funds were lost on Tuesday,Cybersecurity,Positive,news,T108,true
+Update: Summit Steel Industries restores systems after cyber incident; says no customer funds were lost,Cybersecurity,Positive,news,T108,true
+"Breaking: Helix Energy Corp restores systems after cyber incident; says no customer funds were lost, analysts said",Cybersecurity,Positive,news,T108,true
+Markets: Malware found in Summit Steel Industries's supplier software raises supply chain cyber risk,Cybersecurity,Negative,news,T109,true
+Malware found in Helix Energy Corp's supplier software raises supply chain cyber risk in early trading,Cybersecurity,Negative,news,T109,true
+Update: Malware found in Bluewater Utilities's supplier software raises supply chain cyber risk,Cybersecurity,Negative,news,T109,true
+Malware found in Quantum Payments's supplier software raises supply chain cyber risk,Cybersecurity,Negative,news,T109,true
+Update: Crestline Retail Group confirms cyberattack disrupted trading systems across the sector,Cybersecurity,Negative,news,T110,true
+Breaking: Granite Real Estate Trust confirms cyberattack disrupted trading systems across the sector,Cybersecurity,Negative,news,T110,true
+Helix Energy Corp confirms cyberattack disrupted trading systems across the sector in early trading,Cybersecurity,Negative,news,T110,true
+Quantum Payments confirms cyberattack disrupted trading systems across the sector,Cybersecurity,Negative,news,T110,true
+ugh $QPAY got hacked?? app down and people seeing weird transactions,Cybersecurity,Negative,social,T111,true
+heads up: $HLXE got hacked?? app down and people seeing weird transactions,Cybersecurity,Negative,social,T111,true
+$ATLA got hacked?? app down and people seeing weird transactions thoughts?,Cybersecurity,Negative,social,T111,true
+ok so $ATLA got hacked?? app down and people seeing weird transactions,Cybersecurity,Negative,social,T111,true
+wow. Massive data breach at $MRDS. change your passwords now #markets,Cybersecurity,Negative,social,T112,true
+wow. Massive data breach at $VNTP. change your passwords now #finance,Cybersecurity,Negative,social,T112,true
+heads up: Massive data breach at $MRDS. change your passwords now lol,Cybersecurity,Negative,social,T112,true
+Massive data breach at $ATLA. change your passwords now lol,Cybersecurity,Negative,social,T112,true
+Ransomware gang claims they hit $ATLA. leaked records posted online thoughts?,Cybersecurity,Negative,social,T113,true
+heads up: Ransomware gang claims they hit $MRDS. leaked records posted online thoughts?,Cybersecurity,Negative,social,T113,true
+Ransomware gang claims they hit $GRET. leaked records posted online,Cybersecurity,Negative,social,T113,true
+heads up: Ransomware gang claims they hit $MRDS. leaked records posted online,Cybersecurity,Negative,social,T113,true
+$QPAY says the vulnerability is patched. waiting for the full report,Cybersecurity,Neutral,social,T114,true
+ugh $ATLA says the vulnerability is patched. waiting for the full report,Cybersecurity,Neutral,social,T114,true
+ugh $VNTP says the vulnerability is patched. waiting for the full report,Cybersecurity,Neutral,social,T114,true
+heads up: $HLXE says the vulnerability is patched. waiting for the full report #finance,Cybersecurity,Neutral,social,T114,true
+"heads up: $GRET systems back online after the cyber incident, no funds lost #markets",Cybersecurity,Positive,social,T115,true
+"$MRDS systems back online after the cyber incident, no funds lost",Cybersecurity,Positive,social,T115,true
+"$QPAY systems back online after the cyber incident, no funds lost #markets",Cybersecurity,Positive,social,T115,true
+"heads up: $ATLA systems back online after the cyber incident, no funds lost lol",Cybersecurity,Positive,social,T115,true
+"Fire at Bluewater Utilities's main plant halts production for at least two weeks, according to people familiar with the matter",Operational Disruption,Negative,news,T116,true
+Fire at Aurora Semiconductors's main plant halts production for at least two weeks,Operational Disruption,Negative,news,T116,true
+Breaking: Fire at Northwind Bank's main plant halts production for at least two weeks,Operational Disruption,Negative,news,T116,true
+Fire at Summit Steel Industries's main plant halts production for at least two weeks in early trading,Operational Disruption,Negative,news,T116,true
+"Markets: Workers at Vantage Pharma begin indefinite strike, disrupting deliveries in early trading",Operational Disruption,Negative,news,T117,true
+"Update: Workers at Aurora Semiconductors begin indefinite strike, disrupting deliveries",Operational Disruption,Negative,news,T117,true
+"Breaking: Workers at Granite Real Estate Trust begin indefinite strike, disrupting deliveries on Tuesday",Operational Disruption,Negative,news,T117,true
+"Update: Workers at Helix Energy Corp begin indefinite strike, disrupting deliveries, according to people familiar with the matter",Operational Disruption,Negative,news,T117,true
+"System outage grounds Quantum Payments flights nationwide for six hours, sources said",Operational Disruption,Negative,news,T118,true
+Breaking: System outage grounds Crestline Retail Group flights nationwide for six hours,Operational Disruption,Negative,news,T118,true
+Breaking: System outage grounds Helix Energy Corp flights nationwide for six hours,Operational Disruption,Negative,news,T118,true
+Update: System outage grounds Helix Energy Corp flights nationwide for six hours,Operational Disruption,Negative,news,T118,true
+Markets: Port congestion and supply chain bottlenecks delay Atlas Airlines shipments,Operational Disruption,Negative,news,T119,true
+"Update: Port congestion and supply chain bottlenecks delay Quantum Payments shipments, analysts said",Operational Disruption,Negative,news,T119,true
+"Markets: Port congestion and supply chain bottlenecks delay Atlas Airlines shipments, according to people familiar with the matter",Operational Disruption,Negative,news,T119,true
+Markets: Port congestion and supply chain bottlenecks delay Orion Telecom shipments,Operational Disruption,Negative,news,T119,true
+"Helix Energy Corp issues product recall after defects found in a key component, sources said",Operational Disruption,Negative,news,T120,true
+"Orion Telecom issues product recall after defects found in a key component, according to people familiar with the matter",Operational Disruption,Negative,news,T120,true
+"Breaking: Vantage Pharma issues product recall after defects found in a key component, analysts said",Operational Disruption,Negative,news,T120,true
+Markets: Vantage Pharma issues product recall after defects found in a key component in early trading,Operational Disruption,Negative,news,T120,true
+Markets: Flooding forces Quantum Payments to shut down two facilities,Operational Disruption,Negative,news,T121,true
+Flooding forces Granite Real Estate Trust to shut down two facilities,Operational Disruption,Negative,news,T121,true
+"Flooding forces Bluewater Utilities to shut down two facilities, analysts said",Operational Disruption,Negative,news,T121,true
+Flooding forces Helix Energy Corp to shut down two facilities on Tuesday,Operational Disruption,Negative,news,T121,true
+Bluewater Utilities resumes full production after resolving the supply disruption,Operational Disruption,Positive,news,T122,true
+"Update: Northwind Bank resumes full production after resolving the supply disruption, sources said",Operational Disruption,Positive,news,T122,true
+Update: Helix Energy Corp resumes full production after resolving the supply disruption on Tuesday,Operational Disruption,Positive,news,T122,true
+Vantage Pharma resumes full production after resolving the supply disruption on Tuesday,Operational Disruption,Positive,news,T122,true
+"Update: Aurora Semiconductors schedules planned maintenance shutdown at one site; output guidance unchanged, sources said",Operational Disruption,Neutral,news,T123,true
+Aurora Semiconductors schedules planned maintenance shutdown at one site; output guidance unchanged in early trading,Operational Disruption,Neutral,news,T123,true
+Markets: Meridian Shipping schedules planned maintenance shutdown at one site; output guidance unchanged,Operational Disruption,Neutral,news,T123,true
+Breaking: Quantum Payments schedules planned maintenance shutdown at one site; output guidance unchanged in early trading,Operational Disruption,Neutral,news,T123,true
+"Power failure at Helix Energy Corp data centre causes a prolonged service outage, according to people familiar with the matter",Operational Disruption,Negative,news,T124,true
+"Breaking: Power failure at Vantage Pharma data centre causes a prolonged service outage, analysts said",Operational Disruption,Negative,news,T124,true
+"Markets: Power failure at Atlas Airlines data centre causes a prolonged service outage, sources said",Operational Disruption,Negative,news,T124,true
+Breaking: Power failure at Helix Energy Corp data centre causes a prolonged service outage in early trading,Operational Disruption,Negative,news,T124,true
+"$HLXE outage AGAIN. nothing works, customers furious #finance",Operational Disruption,Negative,social,T125,true
+"$QPAY outage AGAIN. nothing works, customers furious",Operational Disruption,Negative,social,T125,true
+"heads up: $NWBK outage AGAIN. nothing works, customers furious",Operational Disruption,Negative,social,T125,true
+"wow. $HLXE outage AGAIN. nothing works, customers furious #finance",Operational Disruption,Negative,social,T125,true
+heads up: Strike at $AURS looks like it will drag on. deliveries halted thoughts?,Operational Disruption,Negative,social,T126,true
+ok so Strike at $AURS looks like it will drag on. deliveries halted #markets,Operational Disruption,Negative,social,T126,true
+ok so Strike at $SMST looks like it will drag on. deliveries halted thoughts?,Operational Disruption,Negative,social,T126,true
+ok so Strike at $GRET looks like it will drag on. deliveries halted lol,Operational Disruption,Negative,social,T126,true
+"Explosion reported at $HLXE facility, production stopped",Operational Disruption,Negative,social,T127,true
+"Explosion reported at $SMST facility, production stopped",Operational Disruption,Negative,social,T127,true
+"ugh Explosion reported at $NWBK facility, production stopped #finance",Operational Disruption,Negative,social,T127,true
+"Explosion reported at $ORTL facility, production stopped #markets",Operational Disruption,Negative,social,T127,true
+"ok so $QPAY production back to normal after the shutdown, good recovery lol",Operational Disruption,Positive,social,T128,true
+"$HLXE production back to normal after the shutdown, good recovery",Operational Disruption,Positive,social,T128,true
+"$VNTP production back to normal after the shutdown, good recovery",Operational Disruption,Positive,social,T128,true
+"heads up: $GRET production back to normal after the shutdown, good recovery",Operational Disruption,Positive,social,T128,true
+"$VNTP maintenance shutdown this weekend, planned and announced lol",Operational Disruption,Neutral,social,T129,true
+"$AURS maintenance shutdown this weekend, planned and announced lol",Operational Disruption,Neutral,social,T129,true
+"ugh $CRST maintenance shutdown this weekend, planned and announced thoughts?",Operational Disruption,Neutral,social,T129,true
+"wow. $NWBK maintenance shutdown this weekend, planned and announced",Operational Disruption,Neutral,social,T129,true
+Markets: Bond market sell-off deepens as funding stress spreads across the sector,Market / Liquidity,Negative,news,T130,true
+Bond market sell-off deepens as funding stress spreads across the sector,Market / Liquidity,Negative,news,T130,true
+"Bond market sell-off deepens as funding stress spreads across the sector, analysts said",Market / Liquidity,Negative,news,T130,true
+Bond market sell-off deepens as funding stress spreads across the sector on Tuesday,Market / Liquidity,Negative,news,T130,true
+"Credit spreads widen sharply as investors pull funds from high-yield markets, analysts said",Market / Liquidity,Negative,news,T131,true
+Breaking: Credit spreads widen sharply as investors pull funds from high-yield markets,Market / Liquidity,Negative,news,T131,true
+Credit spreads widen sharply as investors pull funds from high-yield markets in early trading,Market / Liquidity,Negative,news,T131,true
+Update: Credit spreads widen sharply as investors pull funds from high-yield markets,Market / Liquidity,Negative,news,T131,true
+"Margin calls force hedge funds into fire sales, amplifying market volatility, sources said",Market / Liquidity,Negative,news,T132,true
+"Margin calls force hedge funds into fire sales, amplifying market volatility, analysts said",Market / Liquidity,Negative,news,T132,true
+"Margin calls force hedge funds into fire sales, amplifying market volatility in early trading",Market / Liquidity,Negative,news,T132,true
+"Breaking: Margin calls force hedge funds into fire sales, amplifying market volatility",Market / Liquidity,Negative,news,T132,true
+Breaking: Depositors withdraw funds from Helix Energy Corp amid fears of a bank run in early trading,Market / Liquidity,Negative,news,T133,true
+Markets: Depositors withdraw funds from Granite Real Estate Trust amid fears of a bank run in early trading,Market / Liquidity,Negative,news,T133,true
+Markets: Depositors withdraw funds from Summit Steel Industries amid fears of a bank run on Tuesday,Market / Liquidity,Negative,news,T133,true
+"Update: Depositors withdraw funds from Orion Telecom amid fears of a bank run, according to people familiar with the matter",Market / Liquidity,Negative,news,T133,true
+"Update: Money market fund redemptions surge, draining liquidity from short-term funding markets",Market / Liquidity,Negative,news,T134,true
+"Money market fund redemptions surge, draining liquidity from short-term funding markets",Market / Liquidity,Negative,news,T134,true
+"Update: Money market fund redemptions surge, draining liquidity from short-term funding markets, analysts said",Market / Liquidity,Negative,news,T134,true
+"Money market fund redemptions surge, draining liquidity from short-term funding markets, sources said",Market / Liquidity,Negative,news,T134,true
+Flash crash wipes 12% off equity indices before trading halt kicks in on Tuesday,Market / Liquidity,Negative,news,T135,true
+"Update: Flash crash wipes 5% off equity indices before trading halt kicks in, according to people familiar with the matter",Market / Liquidity,Negative,news,T135,true
+Flash crash wipes 7% off equity indices before trading halt kicks in in early trading,Market / Liquidity,Negative,news,T135,true
+Breaking: Flash crash wipes 5% off equity indices before trading halt kicks in,Market / Liquidity,Negative,news,T135,true
+Update: Liquidity conditions improve as repo rates normalise and spreads tighten in early trading,Market / Liquidity,Positive,news,T136,true
+"Liquidity conditions improve as repo rates normalise and spreads tighten, analysts said",Market / Liquidity,Positive,news,T136,true
+Liquidity conditions improve as repo rates normalise and spreads tighten in early trading,Market / Liquidity,Positive,news,T136,true
+Liquidity conditions improve as repo rates normalise and spreads tighten on Tuesday,Market / Liquidity,Positive,news,T136,true
+Breaking: Market volatility index steady as trading volumes return to average levels,Market / Liquidity,Neutral,news,T137,true
+Market volatility index steady as trading volumes return to average levels on Tuesday,Market / Liquidity,Neutral,news,T137,true
+"Market volatility index steady as trading volumes return to average levels, analysts said",Market / Liquidity,Neutral,news,T137,true
+Market volatility index steady as trading volumes return to average levels,Market / Liquidity,Neutral,news,T137,true
+"Markets: Bid-ask spreads blow out in corporate bonds, Helix Energy Corp debt hardest hit, analysts said",Market / Liquidity,Negative,news,T138,true
+"Markets: Bid-ask spreads blow out in corporate bonds, Orion Telecom debt hardest hit, sources said",Market / Liquidity,Negative,news,T138,true
+"Bid-ask spreads blow out in corporate bonds, Summit Steel Industries debt hardest hit",Market / Liquidity,Negative,news,T138,true
+"Bid-ask spreads blow out in corporate bonds, Vantage Pharma debt hardest hit in early trading",Market / Liquidity,Negative,news,T138,true
+"Liquidity is gone. bonds gapping lower, nobody bidding thoughts?",Market / Liquidity,Negative,social,T139,true
+"heads up: Liquidity is gone. bonds gapping lower, nobody bidding #finance",Market / Liquidity,Negative,social,T139,true
+"ok so Liquidity is gone. bonds gapping lower, nobody bidding thoughts?",Market / Liquidity,Negative,social,T139,true
+"Liquidity is gone. bonds gapping lower, nobody bidding #finance",Market / Liquidity,Negative,social,T139,true
+"Bank run vibes at $SMST, long lines and app withdrawals frozen",Market / Liquidity,Negative,social,T140,true
+"heads up: Bank run vibes at $BWUT, long lines and app withdrawals frozen",Market / Liquidity,Negative,social,T140,true
+"Bank run vibes at $ATLA, long lines and app withdrawals frozen thoughts?",Market / Liquidity,Negative,social,T140,true
+"ok so Bank run vibes at $BWUT, long lines and app withdrawals frozen",Market / Liquidity,Negative,social,T140,true
+Huge outflows from credit funds today. spreads widening everywhere thoughts?,Market / Liquidity,Negative,social,T141,true
+ugh Huge outflows from credit funds today. spreads widening everywhere thoughts?,Market / Liquidity,Negative,social,T141,true
+Huge outflows from credit funds today. spreads widening everywhere #finance,Market / Liquidity,Negative,social,T141,true
+ok so Huge outflows from credit funds today. spreads widening everywhere #finance,Market / Liquidity,Negative,social,T141,true
+"heads up: Funding markets calming down, spreads tightening. phew #markets",Market / Liquidity,Positive,social,T142,true
+"ugh Funding markets calming down, spreads tightening. phew thoughts?",Market / Liquidity,Positive,social,T142,true
+"wow. Funding markets calming down, spreads tightening. phew",Market / Liquidity,Positive,social,T142,true
+"Funding markets calming down, spreads tightening. phew #markets",Market / Liquidity,Positive,social,T142,true
+Margin calls everywhere this morning. forced selling into the close,Market / Liquidity,Negative,social,T143,true
+heads up: Margin calls everywhere this morning. forced selling into the close,Market / Liquidity,Negative,social,T143,true
+ugh Margin calls everywhere this morning. forced selling into the close,Market / Liquidity,Negative,social,T143,true
+ugh Margin calls everywhere this morning. forced selling into the close #finance,Market / Liquidity,Negative,social,T143,true
+"Update: Quantum Payments names a new head of investor relations effective next month, according to people familiar with the matter",Unclassified,Neutral,news,T144,true
+Breaking: Atlas Airlines names a new head of investor relations effective next month,Unclassified,Neutral,news,T144,true
+Markets: Aurora Semiconductors names a new head of investor relations effective next month,Unclassified,Neutral,news,T144,true
+"Aurora Semiconductors names a new head of investor relations effective next month, according to people familiar with the matter",Unclassified,Neutral,news,T144,true
+Update: Vantage Pharma will present at an investor conference on Thursday,Unclassified,Neutral,news,T145,true
+Helix Energy Corp will present at an investor conference on Thursday,Unclassified,Neutral,news,T145,true
+Markets: Bluewater Utilities will present at an investor conference on Thursday on Tuesday,Unclassified,Neutral,news,T145,true
+"Breaking: Aurora Semiconductors will present at an investor conference on Thursday, according to people familiar with the matter",Unclassified,Neutral,news,T145,true
+Meridian Shipping sponsors local charity marathon for the fifth consecutive year in early trading,Unclassified,Positive,news,T146,true
+"Northwind Bank sponsors local charity marathon for the fifth consecutive year, according to people familiar with the matter",Unclassified,Positive,news,T146,true
+Breaking: Crestline Retail Group sponsors local charity marathon for the fifth consecutive year,Unclassified,Positive,news,T146,true
+Aurora Semiconductors sponsors local charity marathon for the fifth consecutive year,Unclassified,Positive,news,T146,true
+Breaking: Quantum Payments moves its annual general meeting to a new venue on Tuesday,Unclassified,Neutral,news,T147,true
+Summit Steel Industries moves its annual general meeting to a new venue,Unclassified,Neutral,news,T147,true
+Markets: Vantage Pharma moves its annual general meeting to a new venue,Unclassified,Neutral,news,T147,true
+"Crestline Retail Group moves its annual general meeting to a new venue, according to people familiar with the matter",Unclassified,Neutral,news,T147,true
+"Aurora Semiconductors publishes its annual sustainability report, sources said",Unclassified,Neutral,news,T148,true
+Summit Steel Industries publishes its annual sustainability report,Unclassified,Neutral,news,T148,true
+"Markets: Crestline Retail Group publishes its annual sustainability report, according to people familiar with the matter",Unclassified,Neutral,news,T148,true
+Northwind Bank publishes its annual sustainability report on Tuesday,Unclassified,Neutral,news,T148,true
+Bluewater Utilities wins an award for workplace culture,Unclassified,Positive,news,T149,true
+Meridian Shipping wins an award for workplace culture,Unclassified,Positive,news,T149,true
+Breaking: Helix Energy Corp wins an award for workplace culture,Unclassified,Positive,news,T149,true
+Helix Energy Corp wins an award for workplace culture on Tuesday,Unclassified,Positive,news,T149,true
+Crestline Retail Group updates its corporate logo and website design,Unclassified,Neutral,news,T150,true
+Markets: Bluewater Utilities updates its corporate logo and website design on Tuesday,Unclassified,Neutral,news,T150,true
+"Markets: Orion Telecom updates its corporate logo and website design, sources said",Unclassified,Neutral,news,T150,true
+Update: Helix Energy Corp updates its corporate logo and website design,Unclassified,Neutral,news,T150,true
+Anyone going to the $ORTL investor day? looking for a coffee meetup,Unclassified,Neutral,social,T151,true
+ok so Anyone going to the $ATLA investor day? looking for a coffee meetup lol,Unclassified,Neutral,social,T151,true
+wow. Anyone going to the $GRET investor day? looking for a coffee meetup thoughts?,Unclassified,Neutral,social,T151,true
+ugh Anyone going to the $GRET investor day? looking for a coffee meetup,Unclassified,Neutral,social,T151,true
+"Love the new $BWUT office design, looks great",Unclassified,Positive,social,T152,true
+"heads up: Love the new $BWUT office design, looks great lol",Unclassified,Positive,social,T152,true
+"Love the new $AURS office design, looks great thoughts?",Unclassified,Positive,social,T152,true
+"ok so Love the new $VNTP office design, looks great #finance",Unclassified,Positive,social,T152,true
+ugh $SMST chart looking sideways for weeks. boring,Unclassified,Neutral,social,T153,true
+ugh $GRET chart looking sideways for weeks. boring thoughts?,Unclassified,Neutral,social,T153,true
+heads up: $ATLA chart looking sideways for weeks. boring,Unclassified,Neutral,social,T153,true
+wow. $QPAY chart looking sideways for weeks. boring,Unclassified,Neutral,social,T153,true
+What time does the $CRST webcast start? thoughts?,Unclassified,Neutral,social,T154,true
+What time does the $ORTL webcast start? #markets,Unclassified,Neutral,social,T154,true
+ok so What time does the $SMST webcast start? #finance,Unclassified,Neutral,social,T154,true
+wow. What time does the $NWBK webcast start? #finance,Unclassified,Neutral,social,T154,true
+"Great customer service from $BWUT today, thanks team",Unclassified,Positive,social,T155,true
+"Great customer service from $SMST today, thanks team",Unclassified,Positive,social,T155,true
+"wow. Great customer service from $SMST today, thanks team lol",Unclassified,Positive,social,T155,true
+"Great customer service from $CRST today, thanks team #finance",Unclassified,Positive,social,T155,true
+"Reading about $AURS history over the weekend, interesting company #finance",Unclassified,Neutral,social,T156,true
+"Reading about $HLXE history over the weekend, interesting company #finance",Unclassified,Neutral,social,T156,true
+"heads up: Reading about $AURS history over the weekend, interesting company #markets",Unclassified,Neutral,social,T156,true
+"ugh Reading about $AURS history over the weekend, interesting company lol",Unclassified,Neutral,social,T156,true

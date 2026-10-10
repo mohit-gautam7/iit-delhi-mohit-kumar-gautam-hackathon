@@ -1,0 +1,11 @@
+{
+  "files": [
+    "news_sample.csv",
+    "social_sample.csv"
+  ],
+  "rows_read": 266,
+  "accepted": 254,
+  "rejected": 0,
+  "duplicates": 12,
+  "issues": []
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "published_at": "2026-10-04T08:30:00Z",
+    "source_name": "Synthetic Upload Feed",
+    "headline": "Orion Telecom suffers nationwide network outage after power failure at data centre",
+    "body": "Services were restored after nine hours.",
+    "is_synthetic": true
+  },
+  {
+    "published_at": "2026-10-04T09:10:00Z",
+    "source_name": "Synthetic Upload Feed",
+    "headline": "Regulator fines Northwind Bank $450 million over anti-money-laundering failures",
+    "body": "",
+    "is_synthetic": true
+  },
+  {
+    "published_at": "2026-10-04T10:45:00Z",
+    "source_name": "Synthetic Upload Feed",
+    "headline": "Granite Real Estate Trust reports Q3 results in line with consensus",
+    "body": "Guidance maintained.",
+    "is_synthetic": true
+  }
+]

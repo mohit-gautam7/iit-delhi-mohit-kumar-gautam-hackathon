@@ -1,0 +1,1931 @@
+{
+  "dataset": {
+    "path": "labelled_events.csv",
+    "rows": 628,
+    "templates": 157,
+    "event_counts": {
+      "Geopolitical": 64,
+      "Macroeconomic": 64,
+      "Credit Event": 64,
+      "Merger & Acquisition": 56,
+      "Earnings / Financial Results": 56,
+      "Regulatory / Legal": 56,
+      "Cybersecurity": 56,
+      "Operational Disruption": 56,
+      "Market / Liquidity": 56,
+      "Unclassified": 52,
+      "Product Launch": 48
+    },
+    "sentiment_counts": {
+      "Negative": 344,
+      "Positive": 156,
+      "Neutral": 128
+    },
+    "is_synthetic": true
+  },
+  "event_classification": {
+    "split": {
+      "method": "StratifiedGroupKFold(n_splits=4, groups=template_id, seed=42), fold 0 held out",
+      "train_rows": 468,
+      "test_rows": 160,
+      "train_templates": 117,
+      "test_templates": 40
+    },
+    "variants": {
+      "hybrid": {
+        "accuracy": 0.9938,
+        "macro_f1": 0.9934,
+        "per_class": {
+          "Geopolitical": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 16.0
+          },
+          "Macroeconomic": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 16.0
+          },
+          "Credit Event": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 16.0
+          },
+          "Merger & Acquisition": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 12.0
+          },
+          "Product Launch": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 12.0
+          },
+          "Earnings / Financial Results": {
+            "precision": 0.9231,
+            "recall": 1.0,
+            "f1-score": 0.96,
+            "support": 12.0
+          },
+          "Regulatory / Legal": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 12.0
+          },
+          "Cybersecurity": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 16.0
+          },
+          "Operational Disruption": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 16.0
+          },
+          "Market / Liquidity": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 16.0
+          },
+          "Unclassified": {
+            "precision": 1.0,
+            "recall": 0.9375,
+            "f1-score": 0.9677,
+            "support": 16.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            16,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            16,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            16,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            12,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            12,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            12,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            12,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            16,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            16,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            16,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            15
+          ]
+        ],
+        "labels": [
+          "Geopolitical",
+          "Macroeconomic",
+          "Credit Event",
+          "Merger & Acquisition",
+          "Product Launch",
+          "Earnings / Financial Results",
+          "Regulatory / Legal",
+          "Cybersecurity",
+          "Operational Disruption",
+          "Market / Liquidity",
+          "Unclassified"
+        ]
+      },
+      "ml_only": {
+        "accuracy": 0.5813,
+        "macro_f1": 0.6068,
+        "per_class": {
+          "Geopolitical": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1-score": 0.6667,
+            "support": 16.0
+          },
+          "Macroeconomic": {
+            "precision": 1.0,
+            "recall": 0.1875,
+            "f1-score": 0.3158,
+            "support": 16.0
+          },
+          "Credit Event": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 16.0
+          },
+          "Merger & Acquisition": {
+            "precision": 1.0,
+            "recall": 0.6667,
+            "f1-score": 0.8,
+            "support": 12.0
+          },
+          "Product Launch": {
+            "precision": 0.6364,
+            "recall": 0.5833,
+            "f1-score": 0.6087,
+            "support": 12.0
+          },
+          "Earnings / Financial Results": {
+            "precision": 0.9167,
+            "recall": 0.9167,
+            "f1-score": 0.9167,
+            "support": 12.0
+          },
+          "Regulatory / Legal": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 12.0
+          },
+          "Cybersecurity": {
+            "precision": 1.0,
+            "recall": 0.625,
+            "f1-score": 0.7692,
+            "support": 16.0
+          },
+          "Operational Disruption": {
+            "precision": 1.0,
+            "recall": 0.4375,
+            "f1-score": 0.6087,
+            "support": 16.0
+          },
+          "Market / Liquidity": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1-score": 0.6667,
+            "support": 16.0
+          },
+          "Unclassified": {
+            "precision": 0.1948,
+            "recall": 0.9375,
+            "f1-score": 0.3226,
+            "support": 16.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            8,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            13
+          ],
+          [
+            0,
+            0,
+            16,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            8,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            7,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            11,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            0,
+            0,
+            6
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            7,
+            0,
+            9
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            15
+          ]
+        ],
+        "labels": [
+          "Geopolitical",
+          "Macroeconomic",
+          "Credit Event",
+          "Merger & Acquisition",
+          "Product Launch",
+          "Earnings / Financial Results",
+          "Regulatory / Legal",
+          "Cybersecurity",
+          "Operational Disruption",
+          "Market / Liquidity",
+          "Unclassified"
+        ]
+      },
+      "rules_only": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "per_class": {
+          "Geopolitical": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 16.0
+          },
+          "Macroeconomic": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 16.0
+          },
+          "Credit Event": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 16.0
+          },
+          "Merger & Acquisition": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 12.0
+          },
+          "Product Launch": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 12.0
+          },
+          "Earnings / Financial Results": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 12.0
+          },
+          "Regulatory / Legal": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 12.0
+          },
+          "Cybersecurity": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 16.0
+          },
+          "Operational Disruption": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 16.0
+          },
+          "Market / Liquidity": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 16.0
+          },
+          "Unclassified": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 16.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            16,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            16,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            16,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            12,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            12,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            12,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            12,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            16,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            16,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            16,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            16
+          ]
+        ],
+        "labels": [
+          "Geopolitical",
+          "Macroeconomic",
+          "Credit Event",
+          "Merger & Acquisition",
+          "Product Launch",
+          "Earnings / Financial Results",
+          "Regulatory / Legal",
+          "Cybersecurity",
+          "Operational Disruption",
+          "Market / Liquidity",
+          "Unclassified"
+        ]
+      }
+    },
+    "grouped_cv_macro_f1": {
+      "folds": [
+        0.9934,
+        0.9678,
+        0.9513,
+        0.9924
+      ],
+      "mean": 0.9762,
+      "std": 0.0177
+    },
+    "ambiguous_rate": 0.0125,
+    "mean_confidence_correct": 0.6224,
+    "mean_confidence_wrong": 0.5876,
+    "errors": [
+      {
+        "text": "Aurora Semiconductors sponsors local charity marathon for the fifth consecutive year",
+        "true": "Unclassified",
+        "predicted": "Earnings / Financial Results",
+        "confidence": 0.5876,
+        "secondary": null,
+        "template_id": "T146"
+      }
+    ]
+  },
+  "sentiment": {
+    "naive_vader": {
+      "accuracy": 0.5748,
+      "macro_f1": 0.541,
+      "per_class": {
+        "Positive": {
+          "precision": 0.5095,
+          "recall": 0.6859,
+          "f1-score": 0.5847,
+          "support": 156.0
+        },
+        "Neutral": {
+          "precision": 0.3195,
+          "recall": 0.4219,
+          "f1-score": 0.3636,
+          "support": 128.0
+        },
+        "Negative": {
+          "precision": 0.8032,
+          "recall": 0.5814,
+          "f1-score": 0.6745,
+          "support": 344.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          107,
+          31,
+          18
+        ],
+        [
+          43,
+          54,
+          31
+        ],
+        [
+          60,
+          84,
+          200
+        ]
+      ],
+      "labels": [
+        "Positive",
+        "Neutral",
+        "Negative"
+      ]
+    },
+    "finance_adapted": {
+      "accuracy": 0.7038,
+      "macro_f1": 0.6461,
+      "per_class": {
+        "Positive": {
+          "precision": 0.6421,
+          "recall": 0.7821,
+          "f1-score": 0.7052,
+          "support": 156.0
+        },
+        "Neutral": {
+          "precision": 0.4344,
+          "recall": 0.4141,
+          "f1-score": 0.424,
+          "support": 128.0
+        },
+        "Negative": {
+          "precision": 0.8449,
+          "recall": 0.7762,
+          "f1-score": 0.8091,
+          "support": 344.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          122,
+          24,
+          10
+        ],
+        [
+          36,
+          53,
+          39
+        ],
+        [
+          32,
+          45,
+          267
+        ]
+      ],
+      "labels": [
+        "Positive",
+        "Neutral",
+        "Negative"
+      ]
+    },
+    "rows": 628,
+    "score_range": [
+      -1.0,
+      0.944
+    ],
+    "disagreement_examples": [
+      {
+        "text": "Sanctions widen after military clashes near the Eastern Corridor; analysts warn Quantum Payments faces export restrictions",
+        "true": "Negative",
+        "naive_vader": "Neutral",
+        "finance_adapted": "Negative",
+        "score": -0.6597
+      },
+      {
+        "text": "Sanctions widen after military clashes near the Western Straits; analysts warn Atlas Airlines faces export restrictions, analysts said",
+        "true": "Negative",
+        "naive_vader": "Neutral",
+        "finance_adapted": "Negative",
+        "score": -0.6597
+      },
+      {
+        "text": "Markets: Sanctions widen after military clashes near the Eastern Corridor; analysts warn Granite Real Estate Trust faces export restrictions in early trading",
+        "true": "Negative",
+        "naive_vader": "Positive",
+        "finance_adapted": "Negative",
+        "score": -0.6597
+      },
+      {
+        "text": "Sanctions widen after military clashes near the southern border region; analysts warn Vantage Pharma faces export restrictions on Tuesday",
+        "true": "Negative",
+        "naive_vader": "Neutral",
+        "finance_adapted": "Negative",
+        "score": -0.6597
+      },
+      {
+        "text": "Markets: Central bank delivers surprise 25 basis point rate hike as inflation stays stubbornly high, sources said",
+        "true": "Negative",
+        "naive_vader": "Neutral",
+        "finance_adapted": "Negative",
+        "score": -0.5612
+      },
+      {
+        "text": "Central bank delivers surprise 50 basis point rate hike as inflation stays stubbornly high, sources said",
+        "true": "Negative",
+        "naive_vader": "Neutral",
+        "finance_adapted": "Negative",
+        "score": -0.5612
+      },
+      {
+        "text": "Markets: Central bank delivers surprise 75 basis point rate hike as inflation stays stubbornly high, analysts said",
+        "true": "Negative",
+        "naive_vader": "Neutral",
+        "finance_adapted": "Negative",
+        "score": -0.5612
+      },
+      {
+        "text": "Breaking: Central bank delivers surprise 75 basis point rate hike as inflation stays stubbornly high, sources said",
+        "true": "Negative",
+        "naive_vader": "Neutral",
+        "finance_adapted": "Negative",
+        "score": -0.5612
+      },
+      {
+        "text": "Inflation accelerates to 15% annual pace, raising odds of further monetary tightening, analysts said",
+        "true": "Negative",
+        "naive_vader": "Neutral",
+        "finance_adapted": "Negative",
+        "score": -0.296
+      },
+      {
+        "text": "Markets: Inflation accelerates to 18% annual pace, raising odds of further monetary tightening, sources said",
+        "true": "Negative",
+        "naive_vader": "Neutral",
+        "finance_adapted": "Negative",
+        "score": -0.296
+      },
+      {
+        "text": "Inflation accelerates to 8% annual pace, raising odds of further monetary tightening, sources said",
+        "true": "Negative",
+        "naive_vader": "Neutral",
+        "finance_adapted": "Negative",
+        "score": -0.296
+      },
+      {
+        "text": "Inflation accelerates to 18% annual pace, raising odds of further monetary tightening, according to people familiar with the matter",
+        "true": "Negative",
+        "naive_vader": "Neutral",
+        "finance_adapted": "Negative",
+        "score": -0.2732
+      }
+    ]
+  },
+  "challenge_set": {
+    "hybrid": {
+      "accuracy": 0.2273,
+      "macro_f1": 0.2313,
+      "per_class": {
+        "Geopolitical": {
+          "precision": 1.0,
+          "recall": 0.25,
+          "f1-score": 0.4,
+          "support": 4.0
+        },
+        "Macroeconomic": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 4.0
+        },
+        "Credit Event": {
+          "precision": 0.5,
+          "recall": 0.25,
+          "f1-score": 0.3333,
+          "support": 4.0
+        },
+        "Merger & Acquisition": {
+          "precision": 1.0,
+          "recall": 0.25,
+          "f1-score": 0.4,
+          "support": 4.0
+        },
+        "Product Launch": {
+          "precision": 1.0,
+          "recall": 0.25,
+          "f1-score": 0.4,
+          "support": 4.0
+        },
+        "Earnings / Financial Results": {
+          "precision": 1.0,
+          "recall": 0.25,
+          "f1-score": 0.4,
+          "support": 4.0
+        },
+        "Regulatory / Legal": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 4.0
+        },
+        "Cybersecurity": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 4.0
+        },
+        "Operational Disruption": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 4.0
+        },
+        "Market / Liquidity": {
+          "precision": 1.0,
+          "recall": 0.25,
+          "f1-score": 0.4,
+          "support": 4.0
+        },
+        "Unclassified": {
+          "precision": 0.1176,
+          "recall": 1.0,
+          "f1-score": 0.2105,
+          "support": 4.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ]
+      ],
+      "labels": [
+        "Geopolitical",
+        "Macroeconomic",
+        "Credit Event",
+        "Merger & Acquisition",
+        "Product Launch",
+        "Earnings / Financial Results",
+        "Regulatory / Legal",
+        "Cybersecurity",
+        "Operational Disruption",
+        "Market / Liquidity",
+        "Unclassified"
+      ]
+    },
+    "hybrid_errors": [
+      {
+        "text": "Lenders to Helix Energy Corp are bracing for losses after the firm skipped an interest instalment on its notes",
+        "true": "Credit Event",
+        "predicted": "Unclassified",
+        "confidence": 0.1045
+      },
+      {
+        "text": "Bondholders of Crestline Retail Group were told they will receive 40 cents on the dollar under a court-supervised plan",
+        "true": "Credit Event",
+        "predicted": "Regulatory / Legal",
+        "confidence": 0.7221
+      },
+      {
+        "text": "Analysts at a ratings firm cut Orion Telecom by two notches, leaving it one step above speculative grade",
+        "true": "Credit Event",
+        "predicted": "Unclassified",
+        "confidence": 0.0529
+      },
+      {
+        "text": "Troops massed along the frontier overnight and several governments recalled their ambassadors",
+        "true": "Geopolitical",
+        "predicted": "Operational Disruption",
+        "confidence": 0.4997
+      },
+      {
+        "text": "Leaders of the two rival states shook hands on a peace framework, lifting hopes for regional stability",
+        "true": "Geopolitical",
+        "predicted": "Unclassified",
+        "confidence": 0.0633
+      },
+      {
+        "text": "The foreign ministry summoned envoys after drones crossed into its airspace",
+        "true": "Geopolitical",
+        "predicted": "Unclassified",
+        "confidence": 0.0884
+      },
+      {
+        "text": "Prices paid by households rose at the fastest clip in a decade last month",
+        "true": "Macroeconomic",
+        "predicted": "Unclassified",
+        "confidence": 0.1118
+      },
+      {
+        "text": "Policymakers lifted borrowing costs by half a percentage point and signalled more to come",
+        "true": "Macroeconomic",
+        "predicted": "Unclassified",
+        "confidence": 0.0733
+      },
+      {
+        "text": "Factory output and retail sales both contracted, adding to signs the expansion is ending",
+        "true": "Macroeconomic",
+        "predicted": "Unclassified",
+        "confidence": 0.0758
+      },
+      {
+        "text": "Hiring picked up sharply and wage growth cooled, a goldilocks mix for policymakers",
+        "true": "Macroeconomic",
+        "predicted": "Unclassified",
+        "confidence": 0.0534
+      },
+      {
+        "text": "Meridian Shipping will buy a smaller rival for 1.1 billion dollars in cash and shares",
+        "true": "Merger & Acquisition",
+        "predicted": "Unclassified",
+        "confidence": 0.0582
+      },
+      {
+        "text": "Quantum Payments is exploring a sale of itself after receiving unsolicited interest from suitors",
+        "true": "Merger & Acquisition",
+        "predicted": "Unclassified",
+        "confidence": 0.1504
+      },
+      {
+        "text": "Vantage Pharma agreed to sell its consumer health arm to a private equity group",
+        "true": "Merger & Acquisition",
+        "predicted": "Unclassified",
+        "confidence": 0.0612
+      },
+      {
+        "text": "Aurora Semiconductors showed off a faster chip for data centres that ships next quarter",
+        "true": "Product Launch",
+        "predicted": "Unclassified",
+        "confidence": 0.0538
+      },
+      {
+        "text": "Orion Telecom switched on its new satellite broadband offering for rural customers",
+        "true": "Product Launch",
+        "predicted": "Unclassified",
+        "confidence": 0.1632
+      },
+      {
+        "text": "Crestline Retail Group opened sign-ups for a subscription membership with free delivery",
+        "true": "Product Launch",
+        "predicted": "Unclassified",
+        "confidence": 0.1318
+      },
+      {
+        "text": "Granite Real Estate Trust said funds from operations fell short of what analysts had pencilled in",
+        "true": "Earnings / Financial Results",
+        "predicted": "Unclassified",
+        "confidence": 0.0293
+      },
+      {
+        "text": "Summit Steel posted third-quarter sales well ahead of forecasts on strong export demand",
+        "true": "Earnings / Financial Results",
+        "predicted": "Unclassified",
+        "confidence": 0.0438
+      },
+      {
+        "text": "Helix Energy Corp booked a large one-off charge that pushed the quarter into the red",
+        "true": "Earnings / Financial Results",
+        "predicted": "Unclassified",
+        "confidence": 0.1065
+      },
+      {
+        "text": "Authorities ordered Quantum Payments to pay 300 million dollars for failing to screen transactions",
+        "true": "Regulatory / Legal",
+        "predicted": "Unclassified",
+        "confidence": 0.0641
+      },
+      {
+        "text": "A judge allowed shareholders' claims against Crestline Retail Group to proceed to trial",
+        "true": "Regulatory / Legal",
+        "predicted": "Unclassified",
+        "confidence": 0.0891
+      },
+      {
+        "text": "The competition authority cleared Meridian Shipping's purchase without conditions",
+        "true": "Regulatory / Legal",
+        "predicted": "Unclassified",
+        "confidence": 0.0996
+      },
+      {
+        "text": "Lawmakers proposed a cap on fees that would hit card processors such as Quantum Payments",
+        "true": "Regulatory / Legal",
+        "predicted": "Unclassified",
+        "confidence": 0.0782
+      },
+      {
+        "text": "Criminals encrypted Orion Telecom's billing servers and demanded payment in crypto",
+        "true": "Cybersecurity",
+        "predicted": "Credit Event",
+        "confidence": 0.4067
+      },
+      {
+        "text": "Personal details of Northwind Bank clients appeared for sale on a dark-web forum",
+        "true": "Cybersecurity",
+        "predicted": "Unclassified",
+        "confidence": 0.0723
+      },
+      {
+        "text": "Intruders used stolen employee passwords to move money out of Quantum Payments accounts",
+        "true": "Cybersecurity",
+        "predicted": "Unclassified",
+        "confidence": 0.0754
+      },
+      {
+        "text": "Aurora Semiconductors fixed a flaw in its firmware before attackers could use it",
+        "true": "Cybersecurity",
+        "predicted": "Unclassified",
+        "confidence": 0.1504
+      },
+      {
+        "text": "A blaze at the Summit Steel smelter stopped output for several days",
+        "true": "Operational Disruption",
+        "predicted": "Unclassified",
+        "confidence": 0.0698
+      },
+      {
+        "text": "Pilots at Atlas Airlines walked off the job, cancelling hundreds of flights",
+        "true": "Operational Disruption",
+        "predicted": "Unclassified",
+        "confidence": 0.079
+      },
+      {
+        "text": "Bluewater Utilities customers lost electricity for a day after a substation failed",
+        "true": "Operational Disruption",
+        "predicted": "Unclassified",
+        "confidence": 0.1565
+      },
+      {
+        "text": "Vantage Pharma pulled several batches of a drug from pharmacies after contamination was found",
+        "true": "Operational Disruption",
+        "predicted": "Unclassified",
+        "confidence": 0.0688
+      },
+      {
+        "text": "Dealers struggled to quote prices for riskier debt as buyers disappeared",
+        "true": "Market / Liquidity",
+        "predicted": "Unclassified",
+        "confidence": 0.0479
+      },
+      {
+        "text": "Customers queued outside Northwind Bank branches to pull out their savings",
+        "true": "Market / Liquidity",
+        "predicted": "Unclassified",
+        "confidence": 0.0801
+      },
+      {
+        "text": "Overnight lending rates between banks fell back to normal as stress faded",
+        "true": "Market / Liquidity",
+        "predicted": "Macroeconomic",
+        "confidence": 0.4368
+      }
+    ],
+    "ml_only": {
+      "accuracy": 0.2045,
+      "macro_f1": 0.1939,
+      "per_class": {
+        "Geopolitical": {
+          "precision": 1.0,
+          "recall": 0.25,
+          "f1-score": 0.4,
+          "support": 4.0
+        },
+        "Macroeconomic": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 4.0
+        },
+        "Credit Event": {
+          "precision": 0.5,
+          "recall": 0.25,
+          "f1-score": 0.3333,
+          "support": 4.0
+        },
+        "Merger & Acquisition": {
+          "precision": 1.0,
+          "recall": 0.25,
+          "f1-score": 0.4,
+          "support": 4.0
+        },
+        "Product Launch": {
+          "precision": 1.0,
+          "recall": 0.25,
+          "f1-score": 0.4,
+          "support": 4.0
+        },
+        "Earnings / Financial Results": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 4.0
+        },
+        "Regulatory / Legal": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 4.0
+        },
+        "Cybersecurity": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 4.0
+        },
+        "Operational Disruption": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 4.0
+        },
+        "Market / Liquidity": {
+          "precision": 1.0,
+          "recall": 0.25,
+          "f1-score": 0.4,
+          "support": 4.0
+        },
+        "Unclassified": {
+          "precision": 0.1111,
+          "recall": 1.0,
+          "f1-score": 0.2,
+          "support": 4.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ]
+      ],
+      "labels": [
+        "Geopolitical",
+        "Macroeconomic",
+        "Credit Event",
+        "Merger & Acquisition",
+        "Product Launch",
+        "Earnings / Financial Results",
+        "Regulatory / Legal",
+        "Cybersecurity",
+        "Operational Disruption",
+        "Market / Liquidity",
+        "Unclassified"
+      ]
+    },
+    "rules_only": {
+      "accuracy": 0.1591,
+      "macro_f1": 0.126,
+      "per_class": {
+        "Geopolitical": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 4.0
+        },
+        "Macroeconomic": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 4.0
+        },
+        "Credit Event": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 4.0
+        },
+        "Merger & Acquisition": {
+          "precision": 1.0,
+          "recall": 0.25,
+          "f1-score": 0.4,
+          "support": 4.0
+        },
+        "Product Launch": {
+          "precision": 1.0,
+          "recall": 0.25,
+          "f1-score": 0.4,
+          "support": 4.0
+        },
+        "Earnings / Financial Results": {
+          "precision": 1.0,
+          "recall": 0.25,
+          "f1-score": 0.4,
+          "support": 4.0
+        },
+        "Regulatory / Legal": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 4.0
+        },
+        "Cybersecurity": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 4.0
+        },
+        "Operational Disruption": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 4.0
+        },
+        "Market / Liquidity": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 4.0
+        },
+        "Unclassified": {
+          "precision": 0.1026,
+          "recall": 1.0,
+          "f1-score": 0.186,
+          "support": 4.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ]
+      ],
+      "labels": [
+        "Geopolitical",
+        "Macroeconomic",
+        "Credit Event",
+        "Merger & Acquisition",
+        "Product Launch",
+        "Earnings / Financial Results",
+        "Regulatory / Legal",
+        "Cybersecurity",
+        "Operational Disruption",
+        "Market / Liquidity",
+        "Unclassified"
+      ]
+    },
+    "sentiment_finance_adapted": {
+      "accuracy": 0.5227,
+      "macro_f1": 0.519,
+      "per_class": {
+        "Positive": {
+          "precision": 0.6667,
+          "recall": 0.5455,
+          "f1-score": 0.6,
+          "support": 11.0
+        },
+        "Neutral": {
+          "precision": 0.2381,
+          "recall": 0.7143,
+          "f1-score": 0.3571,
+          "support": 7.0
+        },
+        "Negative": {
+          "precision": 0.8571,
+          "recall": 0.4615,
+          "f1-score": 0.6,
+          "support": 26.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          6,
+          3,
+          2
+        ],
+        [
+          2,
+          5,
+          0
+        ],
+        [
+          1,
+          13,
+          12
+        ]
+      ],
+      "labels": [
+        "Positive",
+        "Neutral",
+        "Negative"
+      ]
+    },
+    "sentiment_naive_vader": {
+      "accuracy": 0.4773,
+      "macro_f1": 0.4679,
+      "per_class": {
+        "Positive": {
+          "precision": 0.5833,
+          "recall": 0.6364,
+          "f1-score": 0.6087,
+          "support": 11.0
+        },
+        "Neutral": {
+          "precision": 0.1579,
+          "recall": 0.4286,
+          "f1-score": 0.2308,
+          "support": 7.0
+        },
+        "Negative": {
+          "precision": 0.8462,
+          "recall": 0.4231,
+          "f1-score": 0.5641,
+          "support": 26.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          7,
+          2,
+          2
+        ],
+        [
+          4,
+          3,
+          0
+        ],
+        [
+          1,
+          14,
+          11
+        ]
+      ],
+      "labels": [
+        "Positive",
+        "Neutral",
+        "Negative"
+      ]
+    },
+    "rows": 44
+  },
+  "transformer_upgrade": {
+    "available": false,
+    "note": "not run"
+  },
+  "disclaimer": "Metrics are computed on synthetic, template-generated text. They demonstrate that the pipeline works and generalises across held-out templates; they are not evidence of real-world predictive performance."
+}

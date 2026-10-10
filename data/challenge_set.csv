@@ -1,0 +1,45 @@
+text,event_type,sentiment_label,note
+"Lenders to Helix Energy Corp are bracing for losses after the firm skipped an interest instalment on its notes",Credit Event,Negative,paraphrase without core keywords
+"Bondholders of Crestline Retail Group were told they will receive 40 cents on the dollar under a court-supervised plan",Credit Event,Negative,indirect restructuring
+"Analysts at a ratings firm cut Orion Telecom by two notches, leaving it one step above speculative grade",Credit Event,Negative,downgrade paraphrase
+"Atlas Airlines secured a better credit score from an international ratings house after paying down debt",Credit Event,Positive,upgrade paraphrase
+"Troops massed along the frontier overnight and several governments recalled their ambassadors",Geopolitical,Negative,no sanction/war keywords
+"Shipping insurers suspended cover for vessels transiting the disputed waters after the naval standoff",Geopolitical,Negative,indirect
+"Leaders of the two rival states shook hands on a peace framework, lifting hopes for regional stability",Geopolitical,Positive,peace deal
+"The foreign ministry summoned envoys after drones crossed into its airspace",Geopolitical,Negative,diplomatic incident
+"Prices paid by households rose at the fastest clip in a decade last month",Macroeconomic,Negative,inflation paraphrase
+"Policymakers lifted borrowing costs by half a percentage point and signalled more to come",Macroeconomic,Negative,rate hike paraphrase
+"Factory output and retail sales both contracted, adding to signs the expansion is ending",Macroeconomic,Negative,slowdown
+"Hiring picked up sharply and wage growth cooled, a goldilocks mix for policymakers",Macroeconomic,Positive,labour data
+"Meridian Shipping will buy a smaller rival for 1.1 billion dollars in cash and shares",Merger & Acquisition,Positive,purchase paraphrase
+"Quantum Payments is exploring a sale of itself after receiving unsolicited interest from suitors",Merger & Acquisition,Neutral,sale process
+"Vantage Pharma agreed to sell its consumer health arm to a private equity group",Merger & Acquisition,Neutral,asset sale
+"Talks for Northwind Bank to combine with a regional lender broke down over price",Merger & Acquisition,Negative,deal collapse
+"Aurora Semiconductors showed off a faster chip for data centres that ships next quarter",Product Launch,Positive,product paraphrase
+"Orion Telecom switched on its new satellite broadband offering for rural customers",Product Launch,Positive,service start
+"Crestline Retail Group opened sign-ups for a subscription membership with free delivery",Product Launch,Neutral,new offering
+"Bluewater Utilities postponed the debut of its home battery service until next year",Product Launch,Negative,delayed product
+"Granite Real Estate Trust said funds from operations fell short of what analysts had pencilled in",Earnings / Financial Results,Negative,earnings miss paraphrase
+"Summit Steel posted third-quarter sales well ahead of forecasts on strong export demand",Earnings / Financial Results,Positive,beat paraphrase
+"Helix Energy Corp booked a large one-off charge that pushed the quarter into the red",Earnings / Financial Results,Negative,loss
+"Northwind Bank kept its full-year targets unchanged after a quarter that matched forecasts",Earnings / Financial Results,Neutral,in line
+"Authorities ordered Quantum Payments to pay 300 million dollars for failing to screen transactions",Regulatory / Legal,Negative,penalty paraphrase
+"A judge allowed shareholders' claims against Crestline Retail Group to proceed to trial",Regulatory / Legal,Negative,litigation
+"The competition authority cleared Meridian Shipping's purchase without conditions",Regulatory / Legal,Positive,clearance
+"Lawmakers proposed a cap on fees that would hit card processors such as Quantum Payments",Regulatory / Legal,Negative,proposed regulation
+"Criminals encrypted Orion Telecom's billing servers and demanded payment in crypto",Cybersecurity,Negative,ransomware paraphrase
+"Personal details of Northwind Bank clients appeared for sale on a dark-web forum",Cybersecurity,Negative,breach paraphrase
+"Intruders used stolen employee passwords to move money out of Quantum Payments accounts",Cybersecurity,Negative,account takeover
+"Aurora Semiconductors fixed a flaw in its firmware before attackers could use it",Cybersecurity,Positive,patched flaw
+"A blaze at the Summit Steel smelter stopped output for several days",Operational Disruption,Negative,fire paraphrase
+"Pilots at Atlas Airlines walked off the job, cancelling hundreds of flights",Operational Disruption,Negative,strike paraphrase
+"Bluewater Utilities customers lost electricity for a day after a substation failed",Operational Disruption,Negative,power failure
+"Vantage Pharma pulled several batches of a drug from pharmacies after contamination was found",Operational Disruption,Negative,recall paraphrase
+"Investors yanked record sums from corporate bond funds as prices gapped down",Market / Liquidity,Negative,outflows paraphrase
+"Dealers struggled to quote prices for riskier debt as buyers disappeared",Market / Liquidity,Negative,illiquidity
+"Customers queued outside Northwind Bank branches to pull out their savings",Market / Liquidity,Negative,bank run paraphrase
+"Overnight lending rates between banks fell back to normal as stress faded",Market / Liquidity,Positive,funding normalises
+"Granite Real Estate Trust appointed a new chief people officer",Unclassified,Neutral,irrelevant
+"Atlas Airlines repainted its headquarters lobby in brand colours",Unclassified,Neutral,irrelevant
+"Summit Steel employees ran a weekend charity football tournament",Unclassified,Positive,irrelevant
+"Bluewater Utilities moved its investor day to a larger venue",Unclassified,Neutral,irrelevant

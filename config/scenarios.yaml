@@ -1,0 +1,234 @@
+# Event-driven stress scenarios for the synthetic wholesale-banking portfolio.
+#
+# Units (all explicit):
+#   *_pct      decimal fraction (-0.10 = -10%)
+#   *_bp       basis points (100 bp = 1 percentage point = 0.01 in yield terms)
+#   pd_multiplier   stressed PD = min(1, base PD x multiplier)
+#   lgd_add         absolute increase in LGD (0.05 = +5 percentage points)
+#   liquidity_haircut_pct  extra mark-down on post-shock value, by asset class
+#
+# Only asset classes listed in `affected_asset_classes` are shocked, so e.g. a cyber incident
+# does not move government-bond yields. `entity_shock` applies only to positions of the company
+# named in the triggering signal; same-sector positions receive `sector_contagion` x that shock.
+#
+# Shocks are calibrated at `reference_impact`. With scale_with_impact = true, every additive
+# shock (and every multiplier's excess over 1) is scaled by impact / reference_impact,
+# clipped to [scale_floor, scale_cap].
+
+settings:
+  trigger_threshold: 7          # signal impact must be > threshold to auto-trigger
+  reference_impact: 8
+  scale_with_impact: true
+  scale_floor: 0.5
+  scale_cap: 1.25
+  base_currency: USD
+
+scenarios:
+  geopolitical_shock:
+    name: Geopolitical escalation
+    event_types: [Geopolitical]
+    description: >-
+      Escalating conflict / sanctions: risk-off equities, flight to quality lowers government
+      yields, credit spreads widen, oil spikes, safe-haven JPY rallies, EUR weakens.
+    affected_asset_classes: [Equity, Government Bond, Corporate Bond, Loan, FX, Derivative]
+    equity_shock_pct: -0.10
+    sector_equity_shocks_pct: {Energy: 0.06, Industrials: -0.04, Consumer: -0.03}
+    rate_shock_bp: -25
+    credit_spread_shock_bp: {AAA_AA: 15, A: 30, BBB: 60, HY: 150}
+    sector_spread_multiplier: {Industrials: 1.4, Energy: 0.8}
+    fx_shocks_pct: {EUR: -0.04, GBP: -0.03, JPY: 0.03}
+    commodity_shocks_pct: {oil: 0.20}
+    pd_multiplier: 1.3
+    sector_pd_multiplier: {Industrials: 1.6}
+    lgd_add: 0.03
+    liquidity_haircut_pct: {Corporate Bond: 0.005, Equity: 0.005}
+    entity_shock: {equity_pct: -0.15, spread_bp: 150, pd_multiplier: 2.0}
+    sector_contagion: 0.25
+
+  macro_rates_shock:
+    name: Macroeconomic rates shock
+    event_types: [Macroeconomic]
+    description: >-
+      Hawkish surprise / inflation shock: parallel +200 bp rise in yields, equities fall,
+      spreads widen moderately, USD strengthens, borrowers' default risk rises.
+    affected_asset_classes: [Equity, Government Bond, Corporate Bond, Loan, FX, Derivative]
+    equity_shock_pct: -0.08
+    sector_equity_shocks_pct: {Real Estate: -0.06, Utilities: -0.03, Financials: 0.02}
+    rate_shock_bp: 200
+    credit_spread_shock_bp: {AAA_AA: 10, A: 20, BBB: 40, HY: 100}
+    sector_spread_multiplier: {Real Estate: 1.5}
+    fx_shocks_pct: {EUR: -0.03, GBP: -0.03, JPY: -0.04}
+    commodity_shocks_pct: {oil: -0.05}
+    pd_multiplier: 1.25
+    sector_pd_multiplier: {Real Estate: 1.6}
+    lgd_add: 0.02
+    liquidity_haircut_pct: {Corporate Bond: 0.003}
+    entity_shock: {equity_pct: -0.05, spread_bp: 50, pd_multiplier: 1.3}
+    sector_contagion: 0.2
+
+  credit_event:
+    name: Issuer credit event
+    event_types: [Credit Event]
+    description: >-
+      Downgrade / missed payment / default at the named issuer: sharp equity and spread
+      shock to that issuer, contagion to its sector, small market-wide spread widening.
+    affected_asset_classes: [Equity, Corporate Bond, Loan, Derivative]
+    equity_shock_pct: -0.02
+    sector_equity_shocks_pct: {}
+    rate_shock_bp: 0
+    credit_spread_shock_bp: {AAA_AA: 5, A: 10, BBB: 20, HY: 60}
+    sector_spread_multiplier: {}
+    fx_shocks_pct: {}
+    commodity_shocks_pct: {}
+    pd_multiplier: 1.1
+    sector_pd_multiplier: {}
+    lgd_add: 0.05
+    liquidity_haircut_pct: {Corporate Bond: 0.005}
+    entity_shock: {equity_pct: -0.35, spread_bp: 400, pd_multiplier: 4.0}
+    sector_contagion: 0.3
+
+  regulatory_shock:
+    name: Regulatory / legal action
+    event_types: [Regulatory / Legal]
+    description: >-
+      Large fine, litigation or license restriction at the named company with modest
+      read-across to its sector; no macro or rates impact.
+    affected_asset_classes: [Equity, Corporate Bond, Loan, Derivative]
+    equity_shock_pct: 0.0
+    sector_equity_shocks_pct: {}
+    rate_shock_bp: 0
+    credit_spread_shock_bp: {}
+    sector_spread_multiplier: {}
+    fx_shocks_pct: {}
+    commodity_shocks_pct: {}
+    pd_multiplier: 1.0
+    sector_pd_multiplier: {}
+    lgd_add: 0.0
+    liquidity_haircut_pct: {}
+    entity_shock: {equity_pct: -0.12, spread_bp: 80, pd_multiplier: 1.5}
+    sector_contagion: 0.2
+
+  cyber_incident:
+    name: Cybersecurity incident
+    event_types: [Cybersecurity]
+    description: >-
+      Major breach / ransomware at the named company: idiosyncratic equity and spread shock,
+      contagion to same-sector names (shared vendors, regulatory scrutiny).
+    affected_asset_classes: [Equity, Corporate Bond, Loan, Derivative]
+    equity_shock_pct: -0.01
+    sector_equity_shocks_pct: {Financials: -0.02, Technology: -0.02}
+    rate_shock_bp: 0
+    credit_spread_shock_bp: {}
+    sector_spread_multiplier: {}
+    fx_shocks_pct: {}
+    commodity_shocks_pct: {}
+    pd_multiplier: 1.0
+    sector_pd_multiplier: {}
+    lgd_add: 0.0
+    liquidity_haircut_pct: {}
+    entity_shock: {equity_pct: -0.18, spread_bp: 120, pd_multiplier: 1.8}
+    sector_contagion: 0.3
+
+  operational_disruption:
+    name: Operational disruption
+    event_types: [Operational Disruption]
+    description: >-
+      Outage, strike, plant shutdown or supply-chain break at the named company; sector
+      peers and supply-chain-heavy sectors are affected; commodity effect for energy outages.
+    affected_asset_classes: [Equity, Corporate Bond, Loan, Derivative]
+    equity_shock_pct: -0.01
+    sector_equity_shocks_pct: {Industrials: -0.02}
+    rate_shock_bp: 0
+    credit_spread_shock_bp: {BBB: 10, HY: 30}
+    sector_spread_multiplier: {Industrials: 1.5}
+    fx_shocks_pct: {}
+    commodity_shocks_pct: {oil: 0.03}
+    pd_multiplier: 1.05
+    sector_pd_multiplier: {Industrials: 1.2}
+    lgd_add: 0.0
+    liquidity_haircut_pct: {}
+    entity_shock: {equity_pct: -0.12, spread_bp: 90, pd_multiplier: 1.6}
+    sector_contagion: 0.25
+
+  liquidity_stress:
+    name: Market / liquidity stress
+    event_types: [Market / Liquidity]
+    description: >-
+      Broad sell-off with funding stress: equities fall, spreads gap wider, bid-ask widens
+      (liquidity haircuts), flight to quality lowers government yields.
+    affected_asset_classes: [Equity, Government Bond, Corporate Bond, Loan, FX, Derivative]
+    equity_shock_pct: -0.15
+    sector_equity_shocks_pct: {Financials: -0.05, Real Estate: -0.05}
+    rate_shock_bp: -40
+    credit_spread_shock_bp: {AAA_AA: 25, A: 50, BBB: 100, HY: 250}
+    sector_spread_multiplier: {Financials: 1.3}
+    fx_shocks_pct: {EUR: -0.02, GBP: -0.03, JPY: 0.04}
+    commodity_shocks_pct: {oil: -0.10}
+    pd_multiplier: 1.2
+    sector_pd_multiplier: {}
+    lgd_add: 0.03
+    liquidity_haircut_pct: {Corporate Bond: 0.015, Equity: 0.01, Loan: 0.005}
+    entity_shock: {equity_pct: -0.10, spread_bp: 100, pd_multiplier: 1.5}
+    sector_contagion: 0.3
+
+  mna_event:
+    name: M&A event risk
+    event_types: [Merger & Acquisition]
+    description: >-
+      Leveraged acquisition by the named company: target-style equity move is ignored; the
+      acquirer's credit weakens (more debt), its equity dips, small sector re-rating.
+    affected_asset_classes: [Equity, Corporate Bond, Loan, Derivative]
+    equity_shock_pct: 0.0
+    sector_equity_shocks_pct: {}
+    rate_shock_bp: 0
+    credit_spread_shock_bp: {}
+    sector_spread_multiplier: {}
+    fx_shocks_pct: {}
+    commodity_shocks_pct: {}
+    pd_multiplier: 1.0
+    sector_pd_multiplier: {}
+    lgd_add: 0.0
+    liquidity_haircut_pct: {}
+    entity_shock: {equity_pct: -0.06, spread_bp: 60, pd_multiplier: 1.3}
+    sector_contagion: 0.1
+
+  earnings_shock:
+    name: Earnings shock
+    event_types: [Earnings / Financial Results]
+    description: Results miss / guidance cut at the named company; idiosyncratic equity and credit move.
+    affected_asset_classes: [Equity, Corporate Bond, Loan, Derivative]
+    equity_shock_pct: 0.0
+    sector_equity_shocks_pct: {}
+    rate_shock_bp: 0
+    credit_spread_shock_bp: {}
+    sector_spread_multiplier: {}
+    fx_shocks_pct: {}
+    commodity_shocks_pct: {}
+    pd_multiplier: 1.0
+    sector_pd_multiplier: {}
+    lgd_add: 0.0
+    liquidity_haircut_pct: {}
+    entity_shock: {equity_pct: -0.10, spread_bp: 40, pd_multiplier: 1.2}
+    sector_contagion: 0.15
+
+  product_launch:
+    name: Product launch (idiosyncratic)
+    event_types: [Product Launch]
+    description: >-
+      Product news is rarely a portfolio-level risk; modelled as a small idiosyncratic equity
+      move whose sign follows the signal sentiment (see sentiment_sign).
+    affected_asset_classes: [Equity, Derivative]
+    equity_shock_pct: 0.0
+    sector_equity_shocks_pct: {}
+    rate_shock_bp: 0
+    credit_spread_shock_bp: {}
+    sector_spread_multiplier: {}
+    fx_shocks_pct: {}
+    commodity_shocks_pct: {}
+    pd_multiplier: 1.0
+    sector_pd_multiplier: {}
+    lgd_add: 0.0
+    liquidity_haircut_pct: {}
+    entity_shock: {equity_pct: -0.05, spread_bp: 0, pd_multiplier: 1.0}
+    sector_contagion: 0.0
+    sentiment_sign: true
