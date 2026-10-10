@@ -84,7 +84,15 @@ initially contained only the official submission-guidelines PDF.
 
 ## 5. Publication
 
-PUBLICATION_RESULT
+- Public repository created with the GitHub CLI at the candidate's request:
+  **https://github.com/mohit-gautam7/iit-delhi-mohit-kumar-gautam-hackathon** (branch `main`, incremental
+  commit history as recommended in guidelines section 14).
+- Verified: `gh repo view` reports visibility `PUBLIC`; unauthenticated requests to the raw README and to
+  `docs/presentation.pdf` return HTTP 200.
+- Submission archive `RiskPulse_AI_Hackathon_Submission.zip` (created with `git archive`, so it contains only
+  tracked files - no virtual environments, caches or secrets) is stored next to the project folder.
+- Not done (needs the candidate): demo video upload, college email, submission form. No app hosting
+  (Streamlit Cloud etc.) was configured; the guidelines require a public repo and a live local demo.
 
 ## 6. Remaining steps for the candidate
 
