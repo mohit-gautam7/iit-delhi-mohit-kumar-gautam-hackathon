@@ -3,9 +3,9 @@
 **From Unstructured Information to Actionable Financial Risk Intelligence.**
 
 **Candidate Name:** Mohit Kumar Gautam
-**College Email ID:** _[to be added - college email ID]_
+**College Email ID:** _am1230791@iitd.ac.in_
 **College / Campus:** IIT Delhi
-**Demo Video Link:** _[to be added after upload - YouTube (unlisted)]_
+**Demo Video Link:** _[]_
 **Slide Deck Link (if hosted externally):** not hosted externally - see [`docs/presentation.pdf`](docs/presentation.pdf) (also [`docs/presentation.pptx`](docs/presentation.pptx))
 
 ![RiskPulse AI - Executive Risk Overview](docs/screenshots/overview.png)
