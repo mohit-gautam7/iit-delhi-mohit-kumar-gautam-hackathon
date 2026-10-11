@@ -6,7 +6,7 @@
 **College Email ID:** _am1230791@iitd.ac.in_
 **College / Campus:** IIT Delhi
 **Demo Video Link:** _[]_
-**Slide Deck Link (if hosted externally):** not hosted externally - see [`docs/presentation.pdf`](docs/presentation.pdf) (also [`docs/presentation.pptx`](docs/presentation.pptx))
+**Slide Deck Link :** not hosted externally - see [`docs/presentation.pdf`](docs/presentation.pdf) (also [`docs/presentation.pptx`](docs/presentation.pptx))
 
 ![RiskPulse AI - Executive Risk Overview](docs/screenshots/overview.png)
 
