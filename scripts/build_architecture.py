@@ -1,4 +1,4 @@
-"""Render docs/architecture.png (and .svg) from the actual module layout. Run: python scripts/build_architecture.py"""
+"""Render docs/architecture.png from the actual module layout. Run: python scripts/build_architecture.py"""
 from __future__ import annotations
 
 from pathlib import Path
@@ -114,5 +114,4 @@ ax.text(157, 1.2, "Bundled data is synthetic and fictional. Offline by default; 
 
 out = ROOT / "docs"
 fig.savefig(out / "architecture.png", facecolor=BG)
-fig.savefig(out / "architecture.svg", facecolor=BG)
-print("wrote docs/architecture.png and docs/architecture.svg")
+print("wrote docs/architecture.png")

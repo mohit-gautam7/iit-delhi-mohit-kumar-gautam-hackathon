@@ -8,7 +8,7 @@
 **Demo Video Link:** _[to be added after upload - YouTube (unlisted)]_
 **Slide Deck Link (if hosted externally):** not hosted externally - see [`docs/presentation.pdf`](docs/presentation.pdf) (also [`docs/presentation.pptx`](docs/presentation.pptx))
 
-![RiskPulse AI - Executive Risk Overview](docs/screenshots/overview_fold.png)
+![RiskPulse AI - Executive Risk Overview](docs/screenshots/overview.png)
 
 ## 1. Project Overview / Problem Statement & Approach
 
@@ -171,6 +171,10 @@ signals* to run any signal or scenario manually.
 | P&L reconciliation | components = positions = asset classes = total (asserted in code and tests) |
 | Automated tests | **93 passed** (see [`docs/test_report.md`](docs/test_report.md)) |
 
+| Portfolio Stress Lab | Risk Signal Explorer |
+|---|---|
+| ![Stress Lab](docs/screenshots/stress-lab.png) | ![Signal Explorer](docs/screenshots/signals.png) |
+
 Example signal (from `data/sample_signals.json`):
 
 ```json
@@ -218,15 +222,13 @@ dictionary entity linking over a fixed fictional universe. Details:
 | [`docs/model_card.md`](docs/model_card.md) | models, evaluation protocol, results, limitations |
 | [`docs/demo_script.md`](docs/demo_script.md) | 5-minute demo with timings and contingency plan |
 | [`docs/test_report.md`](docs/test_report.md) | test inventory and actual results |
-| [`docs/completion_report.md`](docs/completion_report.md) | what was built and verified, remaining steps |
 | [`data/README.md`](data/README.md) | data dictionary and synthetic-data disclosure |
 
 ## AI usage & academic integrity
 
-This is an individual submission. AI coding assistance (Claude Code) was used to help write code,
-documentation and the slide-deck generator; the problem framing, design choices, synthetic-data design,
-evaluation protocol and all reported results were reviewed by the candidate and are reproducible from this
-repository. No pre-existing project or third-party code base was copied; open-source libraries are used
+This is an individual submission. In line with Section 6 of the guidelines, AI-assisted coding tools were
+used during development; the problem framing, design choices, synthetic-data design, evaluation protocol
+and all reported results were reviewed by the candidate and are reproducible from this repository. No pre-existing project or third-party code base was copied; open-source libraries are used
 under their licences.
 
 ## License

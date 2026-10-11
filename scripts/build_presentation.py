@@ -11,6 +11,7 @@ import re
 import shutil
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 from pptx import Presentation
@@ -53,7 +54,9 @@ def gather() -> dict:
     failed = re.search(r"(\d+) failed", out.stdout)
     if not m or failed:
         sys.exit("Tests must pass before building the deck:\n" + out.stdout[-2000:])
-    signals, report = run_default_pipeline()
+    t0 = time.perf_counter()
+    signals, report = run_default_pipeline()  # includes training the classifier
+    seconds = time.perf_counter() - t0
     pf = load_portfolio(PORTFOLIO_FILE)
     demo = pick_demo_signal(signals)
     res = stress_from_signal(pf, demo)
@@ -61,7 +64,7 @@ def gather() -> dict:
                    and s.source_type == "news" and "coupon" in s.text)
     credit = stress_from_signal(pf, example)
     ev = json.loads((ROOT / "data" / "evaluation_report.json").read_text(encoding="utf-8"))
-    return {"tests": int(m.group(1)), "signals": signals, "report": report, "pf": pf, "demo": demo, "res": res,
+    return {"seconds": seconds, "tests": int(m.group(1)), "signals": signals, "report": report, "pf": pf, "demo": demo, "res": res,
             "example": example, "credit": credit, "ev": ev,
             "high": sum(evaluate_trigger(s)["triggered"] for s in signals)}
 
@@ -231,6 +234,25 @@ def bar_chart(s, x, y, w, h, cats, vals, colors, number_format='0.0', title=None
     return ch
 
 
+def node(s, x, y, w, h, title, sub, edge=BORDER, title_color=TEXT):
+    card(s, x, y, w, h, edge=edge)
+    text(s, x + 0.15, y + 0.14, w - 0.3, 0.35, title, 14, title_color, bold=True)
+    text(s, x + 0.15, y + 0.52, w - 0.3, h - 0.6, sub, 11, MUTED)
+
+
+def connect(s, x1, y1, x2, y2, color=ACCENT, arrow=True, elbow=False):
+    from lxml import etree
+    from pptx.enum.shapes import MSO_CONNECTOR
+    from pptx.oxml.ns import qn
+    c = s.shapes.add_connector(MSO_CONNECTOR.ELBOW if elbow else MSO_CONNECTOR.STRAIGHT,
+                               Inches(x1), Inches(y1), Inches(x2), Inches(y2))
+    c.line.color.rgb = rgb(color)
+    c.line.width = Pt(1.75)
+    if arrow:
+        etree.SubElement(c.line._get_or_add_ln(), qn("a:tailEnd")).set("type", "triangle")
+    return c
+
+
 def pic(s, path: Path, x, y, w=None, h=None, border=True):
     kw = {}
     if w:
@@ -263,7 +285,7 @@ def build(d: dict) -> Presentation:
     for i, (lab, col) in enumerate([("AI/NLP risk engine", ACCENT), ("Module B: stress testing", TEAL),
                                     ("Offline · explainable", WARN)]):
         chip(s, 0.75 + i * 2.25, 6.15, 2.1, lab, col)
-    pic(s, DOCS / "screenshots" / "overview_fold.png", 7.75, 1.25, w=4.95)
+    pic(s, DOCS / "screenshots" / "overview.png", 7.75, 1.25, w=4.95)
     text(s, 7.75, 4.45, 4.95, 0.3, "Executive Risk Overview - live dashboard (synthetic data)", 10, MUTED)
     stat(s, 7.75, 4.9, 1.55, 1.25, f"{n_sig}", "signals", TEXT)
     stat(s, 9.45, 4.9, 1.55, 1.25, f"{d['high']}", "high impact", NEG)
@@ -284,38 +306,72 @@ def build(d: dict) -> Presentation:
         circle(s, 0.95, y, 0.5, NEG, str(i + 1))
         text(s, 1.65, y - 0.02, 4.3, 0.35, h, 15, TEXT, bold=True)
         text(s, 1.65, y + 0.33, 4.3, 0.9, b, 13, MUTED)
-    text(s, 6.65, 1.65, 6.0, 0.4, "Our approach: one explainable pipeline", 18, TEXT, bold=True)
-    steps = [("Ingest", "News + social adapters, validation, dedupe, stable IDs", ACCENT),
-             ("Understand", "Entities & tickers, finance-tuned sentiment, 10 event types", ACCENT),
-             ("Score", "Impact 1-10 from transparent, configurable factors + explanation", WARN),
-             ("Stress", "Impact > 7 auto-selects a scenario and revalues a 37-position book", TEAL)]
-    for i, (h, b, col) in enumerate(steps):
-        y = 2.2 + i * 1.07
-        card(s, 6.65, y, 6.05, 0.92)
-        circle(s, 6.85, y + 0.21, 0.5, col, str(i + 1))
-        text(s, 7.55, y + 0.11, 4.9, 0.35, h, 15, TEXT, bold=True)
-        text(s, 7.55, y + 0.45, 5.0, 0.45, b, 12.5, MUTED)
-    text(s, 6.65, 6.5, 6.05, 0.3, "Outputs: dashboard · REST API · JSON / CSV · printable report", 12, TEAL,
-         bold=True)
+    text(s, 6.65, 1.65, 6.0, 0.4, "Our approach: headline to P&L in one pipeline", 18, TEXT, bold=True)
+    short = ex.text.split(". ")[0]
+    card(s, 6.65, 2.2, 6.05, 1.1)
+    text(s, 6.85, 2.3, 5.7, 0.3, "1  RAW TEXT  ·  news-like record", 10.5, ACCENT, bold=True)
+    text(s, 6.85, 2.62, 5.7, 0.6, "\u201c" + short + "\u201d", 13, TEXT, italic=True)
+    connect(s, 9.675, 3.32, 9.675, 3.68)
+    card(s, 6.65, 3.7, 6.05, 1.25)
+    text(s, 6.85, 3.8, 5.7, 0.3, "2  STRUCTURED SIGNAL  ·  NLP engine + explanation", 10.5, WARN, bold=True)
+    widths = [1.3, 1.45, 1.15, 1.55]
+    labels = [(ex.event_type, ACCENT), (f"Sentiment {ex.sentiment_score:+.2f}", NEG),
+              (f"Impact {ex.impact_score}/10", NEG), (f"{ex.ticker} · conf {ex.confidence:.2f}", TEXT)]
+    for i, ((lab, col), w) in enumerate(zip(labels, widths)):
+        chip(s, 6.85 + sum(widths[:i]) + 0.08 * i, 4.2, w, lab, col)
+    text(s, 6.85, 4.6, 5.7, 0.3, "impact > 7  ->  stress test triggered automatically", 11, MUTED)
+    connect(s, 9.675, 4.97, 9.675, 5.33)
+    card(s, 6.65, 5.35, 6.05, 1.25)
+    text(s, 6.85, 5.45, 5.7, 0.3, "3  PORTFOLIO IMPACT  ·  " + credit.scenario_name.lower(), 10.5, TEAL, bold=True)
+    cds = credit.positions.set_index("position_id").loc["DV04", "total_pnl_usd"]
+    hedge = "+" + usd(cds)
+    text(s, 6.85, 5.78, 5.7, 0.75, [[(f"{usd(credit.pnl)} ({credit.pnl_pct:+.2%})", {"bold": True, "color": NEG, "size": 18}),
+                                     (f"   on {usd(credit.initial_value)}", {"color": MUTED, "size": 12})],
+                                    [(f"worst hits: {ex.entity} bond, loan, equity  ·  CDS hedge {hedge}",
+                                      {"color": MUTED, "size": 11})]], 12)
     s.notes_slide.notes_text_frame.text = (
         "Three pain points: volume, ambiguity (tone vs impact) and the gap between text and P&L. "
-        "Our pipeline ingests, understands, scores and stresses, with an explanation at every step.")
+        "One real record from the bundled data: a missed coupon becomes a Credit Event signal with impact 9, "
+        "which triggers the issuer-credit scenario and shows the loss on the book, including the CDS hedge.")
 
     # 3 ---- architecture
     s = deck.slide("System design: modular, offline, one engine everywhere", "Architecture")
-    pic(s, DOCS / "architecture.png", 0.6, 1.5, w=8.95)
-    card(s, 9.8, 1.5, 2.95, 5.05)
-    text(s, 10.0, 1.68, 2.6, 0.4, "Tech choices", 16, TEXT, bold=True)
-    tech = [("Python 3.11", "pandas, NumPy"), ("scikit-learn", "TF-IDF + logistic regression"),
-            ("VADER", "+ finance lexicon"), ("Pydantic", "validated signal schema"), ("FastAPI", "REST for downstream apps"),
-            ("Streamlit + Plotly", "6-page dashboard"), ("PyYAML", "editable scenarios & weights"),
-            ("Optional", "FinBERT, BART-MNLI")]
-    for i, (a, b) in enumerate(tech):
-        text(s, 10.0, 2.2 + i * 0.53, 2.6, 0.5, [[(a, {"bold": True, "color": TEXT, "size": 12})],
-                                                 [(b, {"color": MUTED, "size": 10.5})]], 12)
-    text(s, 0.6, 6.62, 9.0, 0.3, "Dashboard, API, CLI and reports call the same riskpulse modules: displayed and "
-         "exported numbers always agree.", 11.5, MUTED)
-    s.notes_slide.notes_text_frame.text = "Walk the diagram left to right: sources, ingestion, NLP, signal, stress, consumers."
+    text(s, 0.6, 1.45, 6, 0.3, "SIGNAL PATH  ·  AI/NLP risk engine", 10.5, ACCENT, bold=True)
+    xs, w, y1, y2, h = [0.6, 3.05, 5.5, 7.95, 10.4], 2.2, 1.78, 4.12, 1.45
+    row1 = [("Sources", "News + social CSV / JSON\nupload · RSS (optional)", BORDER, TEXT),
+            ("Ingestion", "validate · normalise UTC\nde-duplicate · stable IDs", ACCENT, TEXT),
+            ("NLP engine", "entities · sentiment\nevent type · impact 1-10", ACCENT, TEXT),
+            ("Risk signal", "validated schema\n+ plain-English reason", WARN, WARN),
+            ("Consumers", "6-page dashboard\nREST API · JSON / CSV / HTML", TEAL, TEXT)]
+    for x, (t, sub, e, tc) in zip(xs, row1):
+        node(s, x, y1, w, h, t, sub, e, tc)
+    for x in xs[:-1]:
+        connect(s, x + w + 0.02, y1 + h / 2, x + w + 0.23, y1 + h / 2)
+    text(s, 0.6, 3.79, 7, 0.3, "STRESS PATH  ·  Module B portfolio stress testing", 10.5, TEAL, bold=True)
+    row2 = {0.6: ("Synthetic portfolio", "37 positions · ~$1.02bn\nloans, bonds, equity, FX, derivs"),
+            5.5: ("Trigger", "impact > 7 (configurable)\nevent type -> scenario"),
+            7.95: ("Scenario library", "10 scenarios in YAML\nrates, spreads, FX, PD, oil"),
+            10.4: ("Factor P&L engine", "duration · beta · delta\nPD x LGD · liquidity haircut")}
+    for x, (t, sub) in row2.items():
+        node(s, x, y2, w, h, t, sub, TEAL)
+    connect(s, 9.05, y1 + h, 9.05, 3.62, TEAL, arrow=False)
+    connect(s, 9.05, 3.62, 6.6, 3.62, TEAL, arrow=False)
+    connect(s, 6.6, 3.62, 6.6, y2 - 0.02, TEAL)
+    text(s, 6.75, 3.66, 2.2, 0.25, "impact > 7", 10, TEAL, italic=True)
+    connect(s, 7.72, y2 + h / 2, 7.93, y2 + h / 2, TEAL)
+    connect(s, 10.17, y2 + h / 2, 10.38, y2 + h / 2, TEAL)
+    connect(s, 11.5, y2 - 0.02, 11.5, y1 + h + 0.02, TEAL)
+    connect(s, 1.7, y2 + h, 1.7, y2 + h + 0.3, TEAL, arrow=False)
+    connect(s, 1.7, y2 + h + 0.3, 11.5, y2 + h + 0.3, TEAL, arrow=False)
+    connect(s, 11.5, y2 + h + 0.3, 11.5, y2 + h + 0.02, TEAL)
+    tech = ["Python 3.11", "pandas", "scikit-learn", "VADER", "Pydantic", "FastAPI", "Streamlit", "Plotly", "pytest"]
+    for i, t in enumerate(tech):
+        chip(s, 0.6 + i * 1.355, 6.3, 1.27, t, MUTED)
+    text(s, 3.05, 4.3, 2.2, 1.2, "Dashboard, API, CLI and reports call the same modules, so shown and exported "
+         "numbers always agree.", 11, MUTED, italic=True)
+    s.notes_slide.notes_text_frame.text = ("Top row: every record becomes a validated, explained signal. Bottom row: a high-impact signal selects a "
+        "scenario that revalues the synthetic portfolio; results flow to the same dashboard, API and reports. "
+        "Detailed diagram: docs/architecture.png.")
 
     # 4 ---- NLP
     s = deck.slide("AI/NLP risk intelligence with a reason for every score", "Risk engine")
@@ -351,9 +407,29 @@ def build(d: dict) -> Presentation:
     parts = [f"base {f['base_severity']:.1f}"] + [f"{'+' if f[k] > 0 else '-'} {lab} {abs(f[k]):.1f}" for k, lab in
                                                   [("intensity", "intensity"), ("exposure", "exposure"),
                                                    ("sentiment", "tone"), ("breadth", "breadth")] if abs(f[k]) >= 0.05]
-    text(s, 7.1, 5.2, 5.4, 0.3, "Why impact = " + str(ex.impact_score), 12, TEXT, bold=True)
-    text(s, 7.1, 5.5, 5.4, 0.6, " ".join(parts) + f" = {f['raw_total']:.1f} -> rounded {ex.impact_score}", 12, MUTED)
-    text(s, 7.1, 6.0, 5.4, 0.55, "Keywords: " + ", ".join(re.findall(r"'([^']+)'", ex.explanation)[:4]), 11.5, ACCENT)
+    text(s, 7.1, 5.12, 5.4, 0.3, f"Why impact = {ex.impact_score}  (raw {f['raw_total']:.1f}, rounded)", 12, TEXT, bold=True)
+    scale, x0, yb = 0.5, 7.1, 5.5
+    segs = [("base", f["base_severity"], "3C5A99")] + [(lab, f[k], col) for k, lab, col in
+                                                       [("intensity", "intensity", WARN), ("breadth", "breadth", WARN),
+                                                        ("exposure", "exposure", TEAL), ("sentiment", "tone", NEG)]
+                                                       if f[k] >= 0.05]
+    x = x0
+    for lab, v, col in segs:
+        seg = s.shapes.add_shape(MSO_SHAPE.RECTANGLE, Inches(x), Inches(yb), Inches(v * scale), Inches(0.3))
+        seg.fill.solid()
+        seg.fill.fore_color.rgb = rgb(col)
+        seg.line.color.rgb = rgb(PANEL)
+        seg.shadow.inherit = False
+        x += v * scale
+    connect(s, x0 + 7 * scale, yb - 0.08, x0 + 7 * scale, yb + 0.38, WARN, arrow=False)
+    runs = []
+    for i, (lab, v, col) in enumerate(segs):
+        runs.append((("" if i == 0 else "  +  ") + f"{lab} {v:.1f}", {"color": "7FA0E6" if i == 0 else col, "size": 11,
+                                                                      "bold": True}))
+    runs.append((f"  =  {f['raw_total']:.1f}", {"color": TEXT, "size": 11, "bold": True}))
+    runs.append(("     | marker = trigger > 7", {"color": WARN, "size": 10}))
+    text(s, x0, yb + 0.42, 5.5, 0.3, [runs], 11)
+    text(s, 7.1, 6.3, 5.4, 0.3, "Keywords: " + ", ".join(re.findall(r"'([^']+)'", ex.explanation)[:4]), 11.5, ACCENT)
     s.notes_slide.notes_text_frame.text = "Read the example: how event, sentiment, entity and impact are derived."
 
     # 5 ---- stress
@@ -372,7 +448,7 @@ def build(d: dict) -> Presentation:
     text(s, 9.3, 2.15, 3.3, 0.35, "Assumptions (explicit)", 14, TEXT, bold=True)
     p = res.params
     bullets = [f"Rates {p['rate_shock_bp']:+.0f} bp (flight to quality)", f"Equities {p['equity_shock_pct']:+.1%} x beta",
-               f"Spreads +{p['credit_spread_shock_bp']['BBB']:.0f} bp BBB / +{p['credit_spread_shock_bp']['HY']:.0f} bp HY",
+               f"Spreads +{p['credit_spread_shock_bp']['BBB']:g} bp BBB / +{p['credit_spread_shock_bp']['HY']:g} bp HY",
                f"Loan PD x{p['pd_multiplier']:.2f}, LGD +{p['lgd_add'] * 100:.1f} pp",
                "Liquidity haircut after market moves", "Bonds: -ModDur x dy (bp / 10,000)",
                "Derivatives: delta / DV01 approximations"]
@@ -390,7 +466,7 @@ def build(d: dict) -> Presentation:
          f"{rep.duplicates} duplicates removed")
     stat(s, 5.4, 1.55, 2.25, 1.3, f"{ec['grouped_cv_macro_f1']['mean']:.3f}", "grouped CV macro-F1", TEXT,
          "held-out templates (optimistic)")
-    stat(s, 7.8, 1.55, 2.25, 1.3, "0.00", "P&L reconciliation gap", POS, "components = positions = total")
+    stat(s, 7.8, 1.55, 2.25, 1.3, f"{d['seconds']:.1f} s", "text -> signals", ACCENT, f"{n_sig} records, laptop CPU")
     cats = ["Naive VADER", "Finance VADER", "FinBERT (opt.)"]
     vals = [se["naive_vader"]["accuracy"] * 100, se["finance_adapted"]["accuracy"] * 100]
     cols = [MUTED, ACCENT]
@@ -412,7 +488,11 @@ def build(d: dict) -> Presentation:
               "Explainable scores an analyst can audit and challenge",
               "Links NLP output directly to portfolio P&L by asset class",
               "API + CSV/JSON feed limits, alerts and credit reviews"]
-    text(s, 10.45, 2.15, 2.1, 4.3, [[("•  " + b, {"color": MUTED, "size": 11.5, "space": 8})] for b in impact], 11.5)
+    text(s, 10.45, 2.15, 2.1, 3.0, [[("•  " + b, {"color": MUTED, "size": 11.5, "space": 8})] for b in impact], 11.5)
+    share = d["high"] / n_sig
+    text(s, 10.45, 5.0, 2.1, 0.6, f"{share:.0%}", 34, NEG, bold=True)
+    text(s, 10.45, 5.65, 2.1, 0.9, f"of signals ({d['high']} of {n_sig}) exceed the trigger - "
+         "analysts review these first", 11, MUTED)
     text(s, 0.6, 6.66, 9.4, 0.3, "All metrics measured on synthetic data by scripts/evaluate_model.py; they show the pipeline "
          "works, not real-market predictive power.", 10.5, WARN)
     s.notes_slide.notes_text_frame.text = "Be explicit: synthetic evaluation, honest challenge set, engineering tests."

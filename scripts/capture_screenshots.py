@@ -55,14 +55,8 @@ def main() -> None:
             if errs.count():
                 failures.append((name, errs.first.inner_text()[:600]))
             label = name or "overview"
-            page.screenshot(path=str(out / f"{label}_fold.png"))
-            # Streamlit scrolls inside its own container, so grow the viewport to capture the whole page
-            h = page.evaluate("document.querySelector('[data-testid=\"stMain\"]').scrollHeight")
-            page.set_viewport_size({"width": args.width, "height": max(args.height, int(h) + 40)})
-            page.wait_for_timeout(2500)
             page.screenshot(path=str(out / f"{label}.png"))
-            page.set_viewport_size({"width": args.width, "height": args.height})
-            print(f"{label}: {'EXCEPTION' if errs.count() else 'ok'} (height {h})")
+            print(f"{label}: {'EXCEPTION' if errs.count() else 'ok'}")
         browser.close()
     for name, msg in failures:
         print(f"\n--- {name} ---\n{msg}")

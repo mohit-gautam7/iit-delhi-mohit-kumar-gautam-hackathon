@@ -12,7 +12,7 @@ C = {
     "pos": "#22C55E", "neg": "#F05260", "warn": "#F4B942", "text": "#F3F6FC", "muted": "#94A3B8",
     "border": "#2B3A50", "light": "#F5F7FB",
 }
-# Categorical order validated for CVD separation on the dark surface (dataviz validate_palette.js).
+# Categorical order checked for colour-blind separation and contrast on the dark surface.
 CATEGORICAL = ["#4F7CFF", "#B8863A", "#18A999", "#8F6FE8"]
 SENTIMENT_COLORS = {"Positive": C["pos"], "Neutral": C["muted"], "Negative": C["neg"]}
 SOURCE_COLORS = {"news": C["accent"], "social": C["teal"], "rss": "#B8863A"}

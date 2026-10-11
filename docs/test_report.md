@@ -2,7 +2,7 @@
 
 **Result: 93 passed, 0 failed** - `python -m pytest -v` on Python 3.11.9, pytest 9.1.1, Windows 11
 (2026-10-10). Runtime about 12-17 s. The same suite also passed in a fresh virtual environment created from
-a clean `git clone` with only `pip install -r requirements.txt` (see `docs/completion_report.md`).
+a clean `git clone` with only `pip install -r requirements.txt` (fresh clone, new virtual environment).
 
 ```
 platform win32 -- Python 3.11.9, pytest-9.1.1, pluggy-1.6.0
@@ -32,7 +32,7 @@ Expected values in `test_stress.py` were computed by hand from the documented fo
 | Live API | `uvicorn api:app --port 8000`, real `curl` calls | `/health` 200, `/analyze` 200, empty payload 422, `/docs` 200; responses saved in `docs/api_examples/` |
 | CLI scripts | `generate_demo_data.py`, `run_pipeline.py`, `evaluate_model.py`, `run_stress_test.py` | run successfully; outputs in `data/` and `docs/stress_report.html` |
 | Optional transformer mode | `run_pipeline.py --transformers` and `evaluate_model.py` with local FinBERT / BART-MNLI weights | completed (about 80 s on CPU for 254 records) |
-| Presentation | built by `scripts/build_presentation.py` (fails if any test fails), exported to PDF by PowerPoint, every slide rendered to PNG and inspected; `validate.py` from the pptx skill | 7 slides, validation passed |
+| Presentation | built by `scripts/build_presentation.py` (fails if any test fails), exported to PDF by PowerPoint, every slide rendered to PNG and inspected; OOXML schema validation | 7 slides, validation passed |
 
 ## How to reproduce
 
